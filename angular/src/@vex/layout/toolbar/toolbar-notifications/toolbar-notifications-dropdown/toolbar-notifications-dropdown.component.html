@@ -11,18 +11,10 @@
   </div>
 
   <div class="dropdown-content">
-    <a *ngFor="let notification of notifications; trackBy: trackById"
-       [class.read]="notification.read"
-       [routerLink]="[]"
-       class="notification"
-       fxLayout="row"
-       fxLayoutAlign="start center"
-       matRipple>
-      <ic-icon [icon]="notification.icon"
-               [ngClass]="notification.colorClass"
-               class="notification-icon"
-               fxFlex="none"
-               size="24px"></ic-icon>
+    <a *ngFor="let notification of notifications; trackBy: trackById" [class.read]="notification.read" [routerLink]="[]"
+      class="notification" fxLayout="row" fxLayoutAlign="start center" matRipple>
+      <ic-icon [icon]="notification.icon" [ngClass]="notification.colorClass" class="notification-icon" fxFlex="none"
+        size="24px"></ic-icon>
       <div fxFlex="auto">
         <div class="notification-label">{{ notification.label }}</div>
         <div class="notification-description">{{ notification.datetime | relativeDateTime }}</div>

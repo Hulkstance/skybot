@@ -1,5 +1,6 @@
-import { DateTime } from 'luxon';
 import { Icon } from '@visurel/iconify-angular';
+
+import { DateTime } from 'luxon';
 
 export interface Notification {
   id: string;

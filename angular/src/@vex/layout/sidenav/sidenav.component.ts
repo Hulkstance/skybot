@@ -26,11 +26,10 @@ export class SidenavComponent implements OnInit {
   icRadioButtonUnchecked = icRadioButtonUnchecked;
 
   constructor(private navigationService: NavigationService,
-              private layoutService: LayoutService,
-              private configService: ConfigService) { }
+    private layoutService: LayoutService,
+    private configService: ConfigService) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
   onMouseEnter() {
     this.layoutService.collapseOpenSidenav();
@@ -43,4 +42,5 @@ export class SidenavComponent implements OnInit {
   toggleCollapse() {
     this.collapsed ? this.layoutService.expandSidenav() : this.layoutService.collapseSidenav();
   }
+
 }

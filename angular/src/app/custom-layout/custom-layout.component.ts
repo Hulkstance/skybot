@@ -8,7 +8,6 @@ import { ConfigService } from '../../@vex/services/config.service';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import { SidebarComponent } from '../../@vex/components/sidebar/sidebar.component';
 
-
 @UntilDestroy()
 @Component({
   selector: 'vex-custom-layout',
@@ -29,14 +28,17 @@ export class CustomLayoutComponent implements OnInit {
 
   @ViewChild('configpanel', { static: true }) configpanel: SidebarComponent;
 
-  constructor(private layoutService: LayoutService,
-              private configService: ConfigService,
-              private breakpointObserver: BreakpointObserver,
-              private router: Router) { }
+  constructor(
+    private layoutService: LayoutService,
+    private configService: ConfigService,
+    private breakpointObserver: BreakpointObserver,
+    private router: Router) { }
 
   ngOnInit() {
-    this.layoutService.configpanelOpen$.pipe(
-      untilDestroyed(this)
-    ).subscribe(open => open ? this.configpanel.open() : this.configpanel.close());
+    this.layoutService.configpanelOpen$
+      .pipe(
+        untilDestroyed(this)
+      ).subscribe(open => open ? this.configpanel.open() : this.configpanel.close());
   }
+
 }

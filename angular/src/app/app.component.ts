@@ -19,18 +19,17 @@ import { ConfigName } from '../@vex/interfaces/config-name.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'vex';
 
   constructor(private configService: ConfigService,
-              private styleService: StyleService,
-              private renderer: Renderer2,
-              private platform: Platform,
-              @Inject(DOCUMENT) private document: Document,
-              @Inject(LOCALE_ID) private localeId: string,
-              private layoutService: LayoutService,
-              private route: ActivatedRoute,
-              private navigationService: NavigationService,
-              private splashScreenService: SplashScreenService) {
+    private styleService: StyleService,
+    private renderer: Renderer2,
+    private platform: Platform,
+    @Inject(DOCUMENT) private document: Document,
+    @Inject(LOCALE_ID) private localeId: string,
+    private layoutService: LayoutService,
+    private route: ActivatedRoute,
+    private navigationService: NavigationService,
+    private splashScreenService: SplashScreenService) {
     Settings.defaultLocale = this.localeId;
 
     if (this.platform.BLINK) {
@@ -52,6 +51,17 @@ export class AppComponent {
      *    }
      *  });
      */
+
+    this.configService.updateConfig({
+      sidenav: {
+        title: 'Skybot',
+        imageUrl: '//placehold.it/100x100',
+        showCollapsePin: true
+      },
+      footer: {
+        visible: false
+      }
+    });
 
     /**
      * Config Related Subscriptions
@@ -85,4 +95,5 @@ export class AppComponent {
       }
     ];
   }
+  
 }

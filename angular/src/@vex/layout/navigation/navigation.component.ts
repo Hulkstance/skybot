@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { NavigationService } from '../../services/navigation.service';
 
 @Component({
@@ -12,6 +13,6 @@ export class NavigationComponent implements OnInit {
 
   constructor(private navigationService: NavigationService) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
+
 }

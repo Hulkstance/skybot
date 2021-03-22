@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Notification } from '../interfaces/notification.interface';
-import { DateTime } from 'luxon';
-import { trackById } from '../../../../utils/track-by';
 import icSettings from '@iconify/icons-ic/twotone-settings';
 import icChevronRight from '@iconify/icons-ic/twotone-chevron-right';
 import icNotificationsOff from '@iconify/icons-ic/twotone-notifications-off';
@@ -14,6 +11,10 @@ import icDescription from '@iconify/icons-ic/twotone-description';
 import icFeedback from '@iconify/icons-ic/twotone-feedback';
 import icVerifiedUser from '@iconify/icons-ic/twotone-verified-user';
 import icFileCopy from '@iconify/icons-ic/twotone-file-copy';
+
+import { Notification } from '../interfaces/notification.interface';
+import { DateTime } from 'luxon';
+import { trackById } from '../../../../utils/track-by';
 
 @Component({
   selector: 'vex-toolbar-notifications-dropdown',
@@ -90,7 +91,6 @@ export class ToolbarNotificationsDropdownComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }

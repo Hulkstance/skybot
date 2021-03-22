@@ -54,8 +54,7 @@ export class ChartComponent implements OnInit, OnChanges {
   @ViewChild('chart', { static: true }) private chartElement: ElementRef;
 
   constructor(private cd: ChangeDetectorRef,
-              private ngZone: NgZone) {}
-
+    private ngZone: NgZone) { }
 
   ngOnInit() {
     asapScheduler.schedule(() => {
@@ -96,4 +95,5 @@ export class ChartComponent implements OnInit, OnChanges {
       this.render();
     });
   }
+
 }

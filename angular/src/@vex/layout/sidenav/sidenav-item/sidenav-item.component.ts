@@ -1,12 +1,12 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, HostBinding, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
-import { NavigationDropdown, NavigationItem, NavigationLink } from '../../../interfaces/navigation-item.interface';
-import { dropdownAnimation } from '../../../animations/dropdown.animation';
 import { NavigationEnd, Router } from '@angular/router';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
-import { filter } from 'rxjs/operators';
-import { NavigationService } from '../../../services/navigation.service';
 import icKeyboardArrowRight from '@iconify/icons-ic/twotone-keyboard-arrow-right';
+import { filter } from 'rxjs/operators';
 
+import { NavigationDropdown, NavigationItem, NavigationLink } from '../../../interfaces/navigation-item.interface';
+import { dropdownAnimation } from '../../../animations/dropdown.animation';
+import { NavigationService } from '../../../services/navigation.service';
 
 @UntilDestroy()
 @Component({
@@ -29,8 +29,8 @@ export class SidenavItemComponent implements OnInit, OnChanges {
   isSubheading = this.navigationService.isSubheading;
 
   constructor(private router: Router,
-              private cd: ChangeDetectorRef,
-              private navigationService: NavigationService) { }
+    private cd: ChangeDetectorRef,
+    private navigationService: NavigationService) { }
 
   @HostBinding('class')
   get levelClass() {
@@ -116,4 +116,5 @@ export class SidenavItemComponent implements OnInit, OnChanges {
   isFunction(prop: NavigationLink['route']) {
     return prop instanceof Function;
   }
+  
 }

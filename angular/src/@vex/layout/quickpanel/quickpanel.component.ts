@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { DateTime } from 'luxon';
 
 @Component({
@@ -13,7 +14,6 @@ export class QuickpanelComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }

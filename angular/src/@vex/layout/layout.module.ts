@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LayoutComponent } from './layout.component';
 import { RouterModule } from '@angular/router';
 import { MatSidenavModule } from '@angular/material/sidenav';
+
+import { LayoutComponent } from './layout.component';
 import { ProgressBarModule } from '../components/progress-bar/progress-bar.module';
 import { SearchModule } from '../components/search/search.module';
 
-
 @NgModule({
-  declarations: [LayoutComponent],
+  declarations: [
+    LayoutComponent
+  ],
   imports: [
     CommonModule,
     RouterModule,
@@ -16,7 +18,8 @@ import { SearchModule } from '../components/search/search.module';
     ProgressBarModule,
     SearchModule
   ],
-  exports: [LayoutComponent]
+  exports: [
+    LayoutComponent
+  ]
 })
-export class LayoutModule {
-}
+export class LayoutModule { }

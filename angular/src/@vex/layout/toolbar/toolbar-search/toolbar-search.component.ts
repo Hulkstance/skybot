@@ -14,7 +14,7 @@ export class ToolbarSearchComponent implements OnInit {
 
   @ViewChild('input', { read: ElementRef, static: true }) input: ElementRef;
 
-  constructor(private cd: ChangeDetectorRef) {}
+  constructor(private cd: ChangeDetectorRef) { }
 
   ngOnInit() {
   }
@@ -32,4 +32,5 @@ export class ToolbarSearchComponent implements OnInit {
     this.isOpen = false;
     this.cd.markForCheck();
   }
+  
 }
