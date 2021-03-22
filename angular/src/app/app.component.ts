@@ -95,5 +95,5 @@ export class AppComponent {
       }
     ];
   }
-  
+
 }

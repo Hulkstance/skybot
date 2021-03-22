@@ -3,6 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
+import { I18nModule } from './i18n';
 import { VexModule } from '../@vex/vex.module';
 import { AppComponent } from './app.component';
 import { CustomLayoutModule } from './custom-layout/custom-layout.module';
@@ -19,6 +20,7 @@ import { AppRoutingModule } from './app-routing.module';
 
     // ngx-translate
     TranslateModule.forRoot(),
+    I18nModule,
 
     // Vex
     VexModule,
