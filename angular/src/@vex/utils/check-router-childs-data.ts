@@ -1,4 +1,5 @@
 import { ActivatedRouteSnapshot } from '@angular/router';
+
 import { VexRouteData } from '../interfaces/vex-route.interface';
 
 export function checkRouterChildsData(route: ActivatedRouteSnapshot & { data?: VexRouteData }, compareWith: (data: VexRouteData) => boolean) {

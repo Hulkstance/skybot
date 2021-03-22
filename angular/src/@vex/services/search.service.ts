@@ -16,4 +16,5 @@ export class SearchService {
   isOpen$ = this.isOpenSubject.asObservable();
 
   constructor() { }
+
 }

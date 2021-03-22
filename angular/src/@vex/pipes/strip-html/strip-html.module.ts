@@ -1,14 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { StripHtmlPipe } from './strip-html.pipe';
 
+import { StripHtmlPipe } from './strip-html.pipe';
 
 @NgModule({
   declarations: [StripHtmlPipe],
-  imports: [
-    CommonModule
-  ],
+  imports: [CommonModule],
   exports: [StripHtmlPipe]
 })
-export class StripHtmlModule {
-}
+export class StripHtmlModule { }

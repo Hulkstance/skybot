@@ -1,8 +1,8 @@
 import { Inject, Injectable } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { DOCUMENT } from '@angular/common';
-import { filter, take } from 'rxjs/operators';
 import { animate, AnimationBuilder, style } from '@angular/animations';
+import { filter, take } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -11,9 +11,10 @@ export class SplashScreenService {
 
   splashScreenElem: HTMLElement;
 
-  constructor(private router: Router,
-              @Inject(DOCUMENT) private document: Document,
-              private animationBuilder: AnimationBuilder) {
+  constructor(
+    private router: Router,
+    @Inject(DOCUMENT) private document: Document,
+    private animationBuilder: AnimationBuilder) {
     this.splashScreenElem = this.document.body.querySelector('#vex-splash-screen');
 
     if (this.splashScreenElem) {
@@ -37,4 +38,5 @@ export class SplashScreenService {
     player.onDone(() => this.splashScreenElem.remove());
     player.play();
   }
+
 }

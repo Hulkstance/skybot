@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { NavigationDropdown, NavigationItem, NavigationLink, NavigationSubheading } from '../interfaces/navigation-item.interface';
 import { Subject } from 'rxjs';
+
+import { NavigationDropdown, NavigationItem, NavigationLink, NavigationSubheading } from '../interfaces/navigation-item.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,7 @@ export class NavigationService {
   private _openChangeSubject = new Subject<NavigationDropdown>();
   openChange$ = this._openChangeSubject.asObservable();
 
-  constructor() {}
+  constructor() { }
 
   triggerOpenChange(item: NavigationDropdown) {
     this._openChangeSubject.next(item);
@@ -29,4 +30,5 @@ export class NavigationService {
   isSubheading(item: NavigationItem): item is NavigationSubheading {
     return item.type === 'subheading';
   }
+
 }

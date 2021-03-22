@@ -1,14 +1,13 @@
 import { Inject, Injectable } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
-import { BehaviorSubject } from 'rxjs';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+import { BehaviorSubject } from 'rxjs';
 
 export enum Style {
   light = 'vex-style-light',
   default = 'vex-style-default',
   dark = 'vex-style-dark'
 }
-
 
 @UntilDestroy()
 @Injectable({
@@ -40,4 +39,5 @@ export class StyleService {
 
     body.classList.add(style);
   }
+  
 }

@@ -1,6 +1,7 @@
 import { Inject, Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
 import { DOCUMENT } from '@angular/common';
+import { BehaviorSubject } from 'rxjs';
+
 import { DeepPartial } from '../interfaces/deep-partial.type';
 import { mergeDeep } from '../utils/merge-deep';
 import { LayoutService } from './layout.service';
@@ -21,7 +22,7 @@ export class ConfigService {
   config$ = this._configSubject.asObservable();
 
   constructor(@Inject(DOCUMENT) private document: Document,
-              private layoutService: LayoutService) {
+    private layoutService: LayoutService) {
     this.config$.subscribe(config => this._updateConfig(config));
   }
 
@@ -61,4 +62,5 @@ export class ConfigService {
       }, 200);
     }
   }
+
 }
