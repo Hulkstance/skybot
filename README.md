@@ -5,6 +5,7 @@
 - Tick data
 - Visualization and the graphics are loading incredibly fast
 - Custom time intervals e.g. 45-minute interval
+- FOREX, crypto, indices, etc. in one platform
 
 ## Principles
 
