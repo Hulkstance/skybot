@@ -26,13 +26,14 @@ export class CustomLayoutComponent implements OnInit {
     map(() => checkRouterChildsData(this.router.routerState.root.snapshot, data => data.toolbarShadowEnabled))
   );
 
-  @ViewChild('configpanel', { static: true }) configpanel: SidebarComponent;
+  @ViewChild('configpanel', {static: true}) configpanel: SidebarComponent;
 
   constructor(
     private layoutService: LayoutService,
     private configService: ConfigService,
     private breakpointObserver: BreakpointObserver,
-    private router: Router) { }
+    private router: Router) {
+  }
 
   ngOnInit() {
     this.layoutService.configpanelOpen$

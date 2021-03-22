@@ -22,4 +22,5 @@ import { QuickpanelModule } from '../../@vex/layout/quickpanel/quickpanel.module
     QuickpanelModule
   ]
 })
-export class CustomLayoutModule { }
+export class CustomLayoutModule {
+}

@@ -10,4 +10,5 @@ import { TranslateModule } from '@ngx-translate/core';
   declarations: [],
   exports: []
 })
-export class I18nModule { }
+export class I18nModule {
+}

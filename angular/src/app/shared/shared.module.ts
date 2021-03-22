@@ -11,4 +11,5 @@ import { TranslateModule } from '@ngx-translate/core';
   entryComponents: [],
   exports: []
 })
-export class SharedModule { }
+export class SharedModule {
+}

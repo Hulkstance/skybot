@@ -14,4 +14,5 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
   ],
   declarations: []
 })
-export class DashboardModule { }
+export class DashboardModule {
+}
