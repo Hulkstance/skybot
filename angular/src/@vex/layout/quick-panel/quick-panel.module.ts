@@ -5,10 +5,10 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { RouterModule } from '@angular/router';
 import { MatRippleModule } from '@angular/material/core';
 
-import { QuickpanelComponent } from './quickpanel.component';
+import { QuickPanelComponent } from './quick-panel.component';
 
 @NgModule({
-  declarations: [QuickpanelComponent],
+  declarations: [QuickPanelComponent],
   imports: [
     CommonModule,
     MatListModule,
@@ -16,7 +16,7 @@ import { QuickpanelComponent } from './quickpanel.component';
     RouterModule,
     MatRippleModule
   ],
-  exports: [QuickpanelComponent]
+  exports: [QuickPanelComponent]
 })
-export class QuickpanelModule {
+export class QuickPanelModule {
 }

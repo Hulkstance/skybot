@@ -21,7 +21,7 @@ export class LayoutComponent implements OnInit, AfterViewInit {
   @Input() sidenavRef: TemplateRef<any>;
   @Input() toolbarRef: TemplateRef<any>;
   @Input() footerRef: TemplateRef<any>;
-  @Input() quickpanelRef: TemplateRef<any>;
+  @Input() quickPanelRef: TemplateRef<any>;
 
   isLayoutVertical$ = this.configService.config$.pipe(map(config => config.layout === 'vertical'));
   isBoxed$ = this.configService.config$.pipe(map(config => config.boxed));
@@ -45,7 +45,7 @@ export class LayoutComponent implements OnInit, AfterViewInit {
 
   searchOpen$ = this.layoutService.searchOpen$;
 
-  @ViewChild('quickpanel', { static: true }) quickpanel: MatSidenav;
+  @ViewChild('quickPanel', { static: true }) quickPanel: MatSidenav;
   @ViewChild('sidenav', { static: true }) sidenav: MatSidenav;
   @ViewChild(MatSidenavContainer, { static: true }) sidenavContainer: MatSidenavContainer;
 
@@ -67,11 +67,11 @@ export class LayoutComponent implements OnInit, AfterViewInit {
     ).subscribe(() => this.layoutService.expandSidenav());
 
     /**
-     * Open/Close Quickpanel through LayoutService
+     * Open/Close Quick panel through LayoutService
      */
-    this.layoutService.quickpanelOpen$.pipe(
+    this.layoutService.quickPanelOpen$.pipe(
       untilDestroyed(this)
-    ).subscribe(open => open ? this.quickpanel.open() : this.quickpanel.close());
+    ).subscribe(open => open ? this.quickPanel.open() : this.quickPanel.close());
 
     /**
      * Open/Close Sidenav through LayoutService

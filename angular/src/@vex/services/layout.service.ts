@@ -27,16 +27,16 @@ export class LayoutService {
   isMobile$ = this.breakpointObserver.observe(`(max-width: 599px)`).pipe(
     map(state => state.matches)
   );
-  private _quickpanelOpenSubject = new BehaviorSubject<boolean>(false);
-  quickpanelOpen$ = this._quickpanelOpenSubject.asObservable();
+  private _quickPanelOpenSubject = new BehaviorSubject<boolean>(false);
+  quickPanelOpen$ = this._quickPanelOpenSubject.asObservable();
   private _sidenavOpenSubject = new BehaviorSubject<boolean>(false);
   sidenavOpen$ = this._sidenavOpenSubject.asObservable();
   private _sidenavCollapsedSubject = new BehaviorSubject<boolean>(false);
   sidenavCollapsed$ = this._sidenavCollapsedSubject.asObservable();
   private _sidenavCollapsedOpenSubject = new BehaviorSubject<boolean>(false);
   sidenavCollapsedOpen$ = this._sidenavCollapsedOpenSubject.asObservable();
-  private _configpanelOpenSubject = new BehaviorSubject<boolean>(false);
-  configpanelOpen$ = this._configpanelOpenSubject.asObservable();
+  private _configPanelOpenSubject = new BehaviorSubject<boolean>(false);
+  configPanelOpen$ = this._configPanelOpenSubject.asObservable();
   private _searchOpen = new BehaviorSubject<boolean>(false);
   searchOpen$ = this._searchOpen.asObservable();
 
@@ -48,12 +48,12 @@ export class LayoutService {
 
   isMobile = () => this.breakpointObserver.isMatched(`(max-width: 599px)`);
 
-  openQuickpanel() {
-    this._quickpanelOpenSubject.next(true);
+  openQuickPanel() {
+    this._quickPanelOpenSubject.next(true);
   }
 
-  closeQuickpanel() {
-    this._quickpanelOpenSubject.next(false);
+  closeQuickPanel() {
+    this._quickPanelOpenSubject.next(false);
   }
 
   openSidenav() {
@@ -80,12 +80,12 @@ export class LayoutService {
     this._sidenavCollapsedOpenSubject.next(false);
   }
 
-  openConfigpanel() {
-    this._configpanelOpenSubject.next(true);
+  openConfigPanel() {
+    this._configPanelOpenSubject.next(true);
   }
 
-  closeConfigpanel() {
-    this._configpanelOpenSubject.next(false);
+  closeConfigPanel() {
+    this._configPanelOpenSubject.next(false);
   }
 
   openSearch() {

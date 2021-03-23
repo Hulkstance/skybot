@@ -26,7 +26,7 @@ export class CustomLayoutComponent implements OnInit {
     map(() => checkRouterChildsData(this.router.routerState.root.snapshot, data => data.toolbarShadowEnabled))
   );
 
-  @ViewChild('configpanel', { static: true }) configpanel: SidebarComponent;
+  @ViewChild('configPanel', { static: true }) configPanel: SidebarComponent;
 
   constructor(
     private layoutService: LayoutService,
@@ -36,10 +36,10 @@ export class CustomLayoutComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.layoutService.configpanelOpen$
+    this.layoutService.configPanelOpen$
       .pipe(
         untilDestroyed(this)
-      ).subscribe(open => open ? this.configpanel.open() : this.configpanel.close());
+      ).subscribe(open => open ? this.configPanel.open() : this.configPanel.close());
   }
 
 }

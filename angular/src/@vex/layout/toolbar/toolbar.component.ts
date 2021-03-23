@@ -63,8 +63,8 @@ export class ToolbarComponent implements OnInit {
   ngOnInit() {
   }
 
-  openQuickpanel() {
-    this.layoutService.openQuickpanel();
+  openQuickPanel() {
+    this.layoutService.openQuickPanel();
   }
 
   openSidenav() {

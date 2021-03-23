@@ -25,12 +25,12 @@
       <ng-container *ngTemplateOutlet="sidenavRef"></ng-container>
     </mat-sidenav>
 
-    <mat-sidenav #quickpanel
+    <mat-sidenav #quickPanel
                  [fixedInViewport]="!(isDesktop$ | async)"
-                 class="quickpanel"
+                 class="quickPanel"
                  mode="over"
                  position="end">
-      <ng-container *ngTemplateOutlet="quickpanelRef"></ng-container>
+      <ng-container *ngTemplateOutlet="quickPanelRef"></ng-container>
     </mat-sidenav>
 
     <mat-sidenav-content class="sidenav-content">

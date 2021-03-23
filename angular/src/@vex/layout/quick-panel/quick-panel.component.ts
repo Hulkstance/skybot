@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { DateTime } from 'luxon';
 
 @Component({
-  selector: 'vex-quickpanel',
-  templateUrl: './quickpanel.component.html',
-  styleUrls: ['./quickpanel.component.scss']
+  selector: 'vex-quick-panel',
+  templateUrl: './quick-panel.component.html',
+  styleUrls: ['./quick-panel.component.scss']
 })
-export class QuickpanelComponent implements OnInit {
+export class QuickPanelComponent implements OnInit {
 
   date = DateTime.local().toFormat('DD');
   dayName = DateTime.local().toFormat('EEEE');

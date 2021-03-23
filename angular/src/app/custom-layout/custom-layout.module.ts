@@ -7,7 +7,7 @@ import { ToolbarModule } from '../../@vex/layout/toolbar/toolbar.module';
 import { FooterModule } from '../../@vex/layout/footer/footer.module';
 import { ConfigPanelModule } from '../../@vex/components/config-panel/config-panel.module';
 import { SidebarModule } from '../../@vex/components/sidebar/sidebar.module';
-import { QuickpanelModule } from '../../@vex/layout/quickpanel/quickpanel.module';
+import { QuickPanelModule } from '../../@vex/layout/quick-panel/quick-panel.module';
 
 @NgModule({
   declarations: [CustomLayoutComponent],
@@ -19,7 +19,7 @@ import { QuickpanelModule } from '../../@vex/layout/quickpanel/quickpanel.module
     FooterModule,
     ConfigPanelModule,
     SidebarModule,
-    QuickpanelModule
+    QuickPanelModule
   ]
 })
 export class CustomLayoutModule {
