@@ -11,8 +11,10 @@ export class NavigationComponent implements OnInit {
 
   items = this.navigationService.items;
 
-  constructor(private navigationService: NavigationService) { }
+  constructor(private navigationService: NavigationService) {
+  }
 
-  ngOnInit() { }
+  ngOnInit() {
+  }
 
 }

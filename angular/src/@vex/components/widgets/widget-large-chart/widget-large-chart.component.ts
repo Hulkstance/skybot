@@ -65,7 +65,8 @@ export class WidgetLargeChartComponent implements OnInit {
   icMoreHoriz = icMoreHoriz;
   icCloudDownload = icCloudDownload;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

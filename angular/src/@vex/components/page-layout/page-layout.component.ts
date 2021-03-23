@@ -13,7 +13,8 @@ export class PageLayoutComponent {
 
   @Input() mode: 'card' | 'simple' = 'simple';
 
-  constructor() { }
+  constructor() {
+  }
 
   @HostBinding('class.vex-page-layout-card')
   get isCard() {

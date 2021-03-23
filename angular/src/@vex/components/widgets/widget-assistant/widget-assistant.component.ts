@@ -10,7 +10,8 @@ export class WidgetAssistantComponent implements OnInit {
 
   icCheckCircle = icCheckCircle;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

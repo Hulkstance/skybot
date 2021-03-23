@@ -60,15 +60,15 @@ export class Logger {
    */
   static outputs: LogOutput[] = [];
 
+  constructor(private source?: string) {
+  }
+
   /**
    * Enables production mode.
    * Sets logging level to LogLevel.Warning.
    */
   static enableProductionMode() {
     Logger.level = LogLevel.Warning;
-  }
-
-  constructor(private source?: string) {
   }
 
   /**

@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'vex-breadcrumb',
   template: `
-      <ng-content></ng-content>
+    <ng-content></ng-content>
   `,
   styles: [],
   host: {
@@ -12,7 +12,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BreadcrumbComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

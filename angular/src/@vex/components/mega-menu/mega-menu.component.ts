@@ -101,7 +101,8 @@ export class MegaMenuComponent implements OnInit {
     }
   ];
 
-  constructor(private popoverRef: PopoverRef<MegaMenuComponent>) { }
+  constructor(private popoverRef: PopoverRef<MegaMenuComponent>) {
+  }
 
   ngOnInit() {
   }

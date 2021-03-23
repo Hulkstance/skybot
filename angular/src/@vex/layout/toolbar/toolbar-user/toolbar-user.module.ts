@@ -30,5 +30,6 @@ import { RelativeDateTimeModule } from '../../../pipes/relative-date-time/relati
   exports: [ToolbarUserComponent],
   entryComponents: [ToolbarUserDropdownComponent]
 })
-export class ToolbarUserModule { }
+export class ToolbarUserModule {
+}
 

@@ -42,4 +42,5 @@ import { ContainerModule } from '../../directives/container/container.module';
     ToolbarComponent
   ]
 })
-export class ToolbarModule { }
+export class ToolbarModule {
+}

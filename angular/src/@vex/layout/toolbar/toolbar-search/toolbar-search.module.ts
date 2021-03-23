@@ -20,4 +20,5 @@ import { ToolbarSearchComponent } from './toolbar-search.component';
   ],
   exports: [ToolbarSearchComponent]
 })
-export class ToolbarSearchModule { }
+export class ToolbarSearchModule {
+}

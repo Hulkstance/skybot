@@ -11,10 +11,13 @@ export class FooterComponent implements OnInit, OnDestroy {
   @Input() customTemplate: TemplateRef<any>;
   icShoppingBasket = icShoppingBasket;
 
-  constructor() { }
+  constructor() {
+  }
 
-  ngOnInit() { }
+  ngOnInit() {
+  }
 
-  ngOnDestroy(): void { }
+  ngOnDestroy(): void {
+  }
 
 }

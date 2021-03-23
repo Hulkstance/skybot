@@ -22,4 +22,5 @@ import { SearchModule } from '../components/search/search.module';
     LayoutComponent
   ]
 })
-export class LayoutModule { }
+export class LayoutModule {
+}

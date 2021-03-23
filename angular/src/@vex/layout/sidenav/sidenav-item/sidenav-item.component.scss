@@ -44,9 +44,9 @@
     background: var(--sidenav-item-dropdown-background);
     padding-inline-start: calc(
       var(--sidenav-item-icon-size) +
-        var(--sidenav-item-icon-gap) +
-        var(--sidenav-item-padding) +
-        (var(--sidenav-item-dropdown-gap) * #{$i - 1})
+      var(--sidenav-item-icon-gap) +
+      var(--sidenav-item-padding) +
+      (var(--sidenav-item-dropdown-gap) * #{$i - 1})
     );
 
     &:hover {

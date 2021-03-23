@@ -24,4 +24,5 @@ import { ScrollbarModule } from '../../components/scrollbar/scrollbar.module';
   ],
   exports: [SidenavComponent]
 })
-export class SidenavModule { }
+export class SidenavModule {
+}

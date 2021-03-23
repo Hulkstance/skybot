@@ -8,4 +8,5 @@ import { RelativeDateTimePipe } from './relative-date-time.pipe';
   imports: [CommonModule],
   exports: [RelativeDateTimePipe]
 })
-export class RelativeDateTimeModule { }
+export class RelativeDateTimeModule {
+}

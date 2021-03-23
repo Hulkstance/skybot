@@ -35,4 +35,5 @@ import { ToolbarNotificationsDropdownComponent } from './toolbar-notifications-d
   exports: [ToolbarNotificationsComponent],
   entryComponents: [ToolbarNotificationsDropdownComponent]
 })
-export class ToolbarNotificationsModule { }
+export class ToolbarNotificationsModule {
+}

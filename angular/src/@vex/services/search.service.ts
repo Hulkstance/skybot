@@ -15,6 +15,7 @@ export class SearchService {
   isOpenSubject = new BehaviorSubject<boolean>(false);
   isOpen$ = this.isOpenSubject.asObservable();
 
-  constructor() { }
+  constructor() {
+  }
 
 }

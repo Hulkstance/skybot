@@ -22,7 +22,7 @@ export class ConfigService {
   config$ = this._configSubject.asObservable();
 
   constructor(@Inject(DOCUMENT) private document: Document,
-    private layoutService: LayoutService) {
+              private layoutService: LayoutService) {
     this.config$.subscribe(config => this._updateConfig(config));
   }
 

@@ -4,9 +4,7 @@ import { ChartComponent } from './chart.component';
 
 @NgModule({
   declarations: [ChartComponent],
-  imports: [
-    CommonModule
-  ],
+  imports: [CommonModule],
   exports: [ChartComponent]
 })
 export class ChartModule {

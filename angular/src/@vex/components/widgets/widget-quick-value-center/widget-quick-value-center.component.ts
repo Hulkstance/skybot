@@ -30,7 +30,8 @@ export class WidgetQuickValueCenterComponent implements OnInit {
 
   showButton: boolean;
 
-  constructor(private _bottomSheet: MatBottomSheet) { }
+  constructor(private _bottomSheet: MatBottomSheet) {
+  }
 
   ngOnInit() {
   }

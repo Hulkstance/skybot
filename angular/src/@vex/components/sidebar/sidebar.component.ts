@@ -14,7 +14,8 @@ export class SidebarComponent implements OnDestroy {
   @Input() position: 'left' | 'right' = 'left';
   @Input() invisibleBackdrop: boolean;
 
-  constructor(@Inject(DOCUMENT) private document: Document) {}
+  constructor(@Inject(DOCUMENT) private document: Document) {
+  }
 
   private _opened: boolean;
 
@@ -55,5 +56,6 @@ export class SidebarComponent implements OnDestroy {
     this.opened = false;
   }
 
-  ngOnDestroy(): void {}
+  ngOnDestroy(): void {
+  }
 }

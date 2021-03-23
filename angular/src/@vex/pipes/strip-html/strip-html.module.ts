@@ -8,4 +8,5 @@ import { StripHtmlPipe } from './strip-html.pipe';
   imports: [CommonModule],
   exports: [StripHtmlPipe]
 })
-export class StripHtmlModule { }
+export class StripHtmlModule {
+}

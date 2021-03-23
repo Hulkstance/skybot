@@ -16,7 +16,8 @@ export class SecondaryToolbarComponent implements OnInit {
     map(config => config.toolbar.fixed)
   );
 
-  constructor(private configService: ConfigService) { }
+  constructor(private configService: ConfigService) {
+  }
 
   ngOnInit() {
   }

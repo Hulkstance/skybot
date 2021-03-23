@@ -7,4 +7,5 @@ import { ContainerDirective } from './container.directive';
   imports: [CommonModule],
   exports: [ContainerDirective]
 })
-export class ContainerModule { }
+export class ContainerModule {
+}

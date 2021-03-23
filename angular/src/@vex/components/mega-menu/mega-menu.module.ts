@@ -19,4 +19,5 @@ import { RouterModule } from '@angular/router';
   exports: [MegaMenuComponent],
   entryComponents: [MegaMenuComponent]
 })
-export class MegaMenuModule { }
+export class MegaMenuModule {
+}

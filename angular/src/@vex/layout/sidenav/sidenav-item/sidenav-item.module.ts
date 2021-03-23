@@ -20,4 +20,5 @@ import { SidenavItemComponent } from './sidenav-item.component';
   ],
   exports: [SidenavItemComponent]
 })
-export class SidenavItemModule { }
+export class SidenavItemModule {
+}

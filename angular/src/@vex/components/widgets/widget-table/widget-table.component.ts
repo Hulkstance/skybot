@@ -25,9 +25,11 @@ export class WidgetTableComponent<T> implements OnInit, OnChanges, AfterViewInit
   icMoreHoriz = icMoreHoriz;
   icCloudDownload = icCloudDownload;
 
-  constructor() { }
+  constructor() {
+  }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes.columns) {

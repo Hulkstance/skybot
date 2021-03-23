@@ -55,11 +55,13 @@ export class ToolbarComponent implements OnInit {
   icArrowDropDown = icArrowDropDown;
 
   constructor(private layoutService: LayoutService,
-    private configService: ConfigService,
-    private navigationService: NavigationService,
-    private popoverService: PopoverService) { }
+              private configService: ConfigService,
+              private navigationService: NavigationService,
+              private popoverService: PopoverService) {
+  }
 
-  ngOnInit() { }
+  ngOnInit() {
+  }
 
   openQuickpanel() {
     this.layoutService.openQuickpanel();

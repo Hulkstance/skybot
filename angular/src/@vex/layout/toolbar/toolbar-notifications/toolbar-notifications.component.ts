@@ -17,9 +17,11 @@ export class ToolbarNotificationsComponent implements OnInit {
   dropdownOpen: boolean;
   icNotificationsActive = icNotificationsActive;
 
-  constructor(private popover: PopoverService, private cd: ChangeDetectorRef) { }
+  constructor(private popover: PopoverService, private cd: ChangeDetectorRef) {
+  }
 
-  ngOnInit() { }
+  ngOnInit() {
+  }
 
   showPopover() {
     this.dropdownOpen = true;

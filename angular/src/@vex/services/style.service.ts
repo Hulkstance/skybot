@@ -39,5 +39,5 @@ export class StyleService {
 
     body.classList.add(style);
   }
-  
+
 }

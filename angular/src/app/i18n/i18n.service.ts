@@ -28,22 +28,11 @@ export class I18nService {
   }
 
   /**
-   * Initializes i18n for the application.
-   * Loads language from local storage if present, or sets default language.
-   * @param defaultLanguage The default language to use.
-   * @param supportedLanguages The list of supported languages.
+   * Gets the current language.
+   * @return The current language code.
    */
-  init(defaultLanguage: string, supportedLanguages: string[]) {
-    this.defaultLanguage = defaultLanguage;
-    this.supportedLanguages = supportedLanguages;
-    this.language = '';
-
-    // Warning: this subscription will always be alive for the app's lifetime
-    this.langChangeSubscription = this.translateService.onLangChange
-      .pipe(untilDestroyed(this))
-      .subscribe((event: LangChangeEvent) => {
-        localStorage.setItem(languageKey, event.lang);
-      });
+  get language(): string {
+    return this.translateService.currentLang;
   }
 
   /**
@@ -73,11 +62,22 @@ export class I18nService {
   }
 
   /**
-   * Gets the current language.
-   * @return The current language code.
+   * Initializes i18n for the application.
+   * Loads language from local storage if present, or sets default language.
+   * @param defaultLanguage The default language to use.
+   * @param supportedLanguages The list of supported languages.
    */
-  get language(): string {
-    return this.translateService.currentLang;
+  init(defaultLanguage: string, supportedLanguages: string[]) {
+    this.defaultLanguage = defaultLanguage;
+    this.supportedLanguages = supportedLanguages;
+    this.language = '';
+
+    // Warning: this subscription will always be alive for the app's lifetime
+    this.langChangeSubscription = this.translateService.onLangChange
+      .pipe(untilDestroyed(this))
+      .subscribe((event: LangChangeEvent) => {
+        localStorage.setItem(languageKey, event.lang);
+      });
   }
 
 }

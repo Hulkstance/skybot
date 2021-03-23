@@ -38,7 +38,7 @@ describe('I18nService', () => {
     TestBed.configureTestingModule({
       providers: [
         I18nService,
-        {provide: TranslateService, useClass: MockTranslateService},
+        { provide: TranslateService, useClass: MockTranslateService },
       ]
     });
 

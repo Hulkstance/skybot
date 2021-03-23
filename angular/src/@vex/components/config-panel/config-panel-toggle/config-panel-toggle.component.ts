@@ -12,7 +12,8 @@ export class ConfigPanelToggleComponent implements OnInit {
 
   icSettings = icSettings;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

@@ -12,8 +12,10 @@ export class QuickpanelComponent implements OnInit {
   date = DateTime.local().toFormat('DD');
   dayName = DateTime.local().toFormat('EEEE');
 
-  constructor() { }
+  constructor() {
+  }
 
-  ngOnInit() { }
+  ngOnInit() {
+  }
 
 }

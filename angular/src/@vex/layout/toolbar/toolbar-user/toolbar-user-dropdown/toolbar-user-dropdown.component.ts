@@ -111,9 +111,11 @@ export class ToolbarUserDropdownComponent implements OnInit {
   icNotificationsOff = icNotificationsOff;
 
   constructor(private cd: ChangeDetectorRef,
-    private popoverRef: PopoverRef<ToolbarUserDropdownComponent>) { }
+              private popoverRef: PopoverRef<ToolbarUserDropdownComponent>) {
+  }
 
-  ngOnInit() { }
+  ngOnInit() {
+  }
 
   setStatus(status: OnlineStatus) {
     this.activeStatus = status;

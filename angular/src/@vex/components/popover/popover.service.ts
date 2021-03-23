@@ -19,7 +19,8 @@ export interface PopoverParams<T> {
   providedIn: 'root'
 })
 export class PopoverService {
-  constructor(private overlay: Overlay, private injector: Injector) { }
+  constructor(private overlay: Overlay, private injector: Injector) {
+  }
 
   open<T>({ origin, content, data, width, height, position, offsetX, offsetY }: PopoverParams<T>): PopoverRef<T> {
     const overlayRef = this.overlay.create(this.getOverlayConfig({ origin, width, height, position, offsetX, offsetY }));

@@ -8,4 +8,5 @@ import { DateTokensPipe } from './date-tokens.pipe';
   exports: [DateTokensPipe],
   imports: [CommonModule],
 })
-export class DateTokensModule { }
+export class DateTokensModule {
+}

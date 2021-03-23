@@ -8,14 +8,14 @@
     </div>
 
     <button [matMenuTriggerFor]="settingsMenu" mat-icon-button matTooltip="Settings" matTooltipPosition="before"
-      type="button">
+            type="button">
       <mat-icon [icIcon]="icSettings" class="notifications-header-icon"></mat-icon>
     </button>
   </div>
 
   <div class="dropdown-content">
     <a (click)="close()" *ngFor="let item of items; trackBy: trackById" [routerLink]="item.route" class="notification"
-      fxLayout="row" fxLayoutAlign="start center" matRipple>
+       fxLayout="row" fxLayoutAlign="start center" matRipple>
       <mat-icon [icIcon]="item.icon" [ngClass]="item.colorClass" class="notification-icon" fxFlex="none"></mat-icon>
       <div fxFlex="auto">
         <div class="notification-label">{{ item.label }}</div>

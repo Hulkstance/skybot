@@ -26,7 +26,8 @@ export class NavigationItemComponent implements OnInit {
   trackByRoute = trackByRoute;
 
   constructor(private navigationService: NavigationService,
-              private router: Router) { }
+              private router: Router) {
+  }
 
   ngOnInit() {
   }

@@ -47,7 +47,8 @@ export class ConfigPanelComponent implements OnInit {
               private styleService: StyleService,
               private layoutService: LayoutService,
               @Inject(DOCUMENT) private document: Document,
-              private route: ActivatedRoute) { }
+              private route: ActivatedRoute) {
+  }
 
   ngOnInit() {
   }

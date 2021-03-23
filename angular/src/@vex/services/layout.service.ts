@@ -9,24 +9,6 @@ import { map } from 'rxjs/operators';
 })
 export class LayoutService {
 
-  private _quickpanelOpenSubject = new BehaviorSubject<boolean>(false);
-  quickpanelOpen$ = this._quickpanelOpenSubject.asObservable();
-
-  private _sidenavOpenSubject = new BehaviorSubject<boolean>(false);
-  sidenavOpen$ = this._sidenavOpenSubject.asObservable();
-
-  private _sidenavCollapsedSubject = new BehaviorSubject<boolean>(false);
-  sidenavCollapsed$ = this._sidenavCollapsedSubject.asObservable();
-
-  private _sidenavCollapsedOpenSubject = new BehaviorSubject<boolean>(false);
-  sidenavCollapsedOpen$ = this._sidenavCollapsedOpenSubject.asObservable();
-
-  private _configpanelOpenSubject = new BehaviorSubject<boolean>(false);
-  configpanelOpen$ = this._configpanelOpenSubject.asObservable();
-
-  private _searchOpen = new BehaviorSubject<boolean>(false);
-  searchOpen$ = this._searchOpen.asObservable();
-
   isDesktop$ = this.breakpointObserver.observe(`(min-width: 1280px)`).pipe(
     map(state => state.matches)
   );
@@ -45,13 +27,26 @@ export class LayoutService {
   isMobile$ = this.breakpointObserver.observe(`(max-width: 599px)`).pipe(
     map(state => state.matches)
   );
+  private _quickpanelOpenSubject = new BehaviorSubject<boolean>(false);
+  quickpanelOpen$ = this._quickpanelOpenSubject.asObservable();
+  private _sidenavOpenSubject = new BehaviorSubject<boolean>(false);
+  sidenavOpen$ = this._sidenavOpenSubject.asObservable();
+  private _sidenavCollapsedSubject = new BehaviorSubject<boolean>(false);
+  sidenavCollapsed$ = this._sidenavCollapsedSubject.asObservable();
+  private _sidenavCollapsedOpenSubject = new BehaviorSubject<boolean>(false);
+  sidenavCollapsedOpen$ = this._sidenavCollapsedOpenSubject.asObservable();
+  private _configpanelOpenSubject = new BehaviorSubject<boolean>(false);
+  configpanelOpen$ = this._configpanelOpenSubject.asObservable();
+  private _searchOpen = new BehaviorSubject<boolean>(false);
+  searchOpen$ = this._searchOpen.asObservable();
+
+  constructor(private router: Router,
+              private breakpointObserver: BreakpointObserver) {
+  }
 
   isLtLg = () => this.breakpointObserver.isMatched(`(max-width: 1279px)`);
 
   isMobile = () => this.breakpointObserver.isMatched(`(max-width: 599px)`);
-
-  constructor(private router: Router,
-    private breakpointObserver: BreakpointObserver) { }
 
   openQuickpanel() {
     this._quickpanelOpenSubject.next(true);
@@ -116,5 +111,5 @@ export class LayoutService {
       }
     });
   }
-  
+
 }

@@ -18,4 +18,5 @@ import { ContainerModule } from '../../directives/container/container.module';
   declarations: [FooterComponent],
   exports: [FooterComponent]
 })
-export class FooterModule { }
+export class FooterModule {
+}

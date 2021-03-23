@@ -89,8 +89,10 @@ export class ToolbarNotificationsDropdownComponent implements OnInit {
   icNotificationsOff = icNotificationsOff;
   trackById = trackById;
 
-  constructor() { }
+  constructor() {
+  }
 
-  ngOnInit() { }
+  ngOnInit() {
+  }
 
 }

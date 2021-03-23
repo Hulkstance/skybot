@@ -21,7 +21,8 @@ export class SearchComponent implements OnInit, OnDestroy {
   @ViewChild('searchInput', { static: true }) input: ElementRef;
 
   constructor(private layoutService: LayoutService,
-              private searchService: SearchService) { }
+              private searchService: SearchService) {
+  }
 
   ngOnInit() {
     this.searchService.isOpenSubject.next(true);

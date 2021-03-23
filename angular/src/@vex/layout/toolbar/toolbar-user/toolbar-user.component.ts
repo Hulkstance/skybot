@@ -15,9 +15,11 @@ export class ToolbarUserComponent implements OnInit {
   icPerson = icPerson;
 
   constructor(private popover: PopoverService,
-    private cd: ChangeDetectorRef) { }
+              private cd: ChangeDetectorRef) {
+  }
 
-  ngOnInit() { }
+  ngOnInit() {
+  }
 
   showPopover(originRef: HTMLElement) {
     this.dropdownOpen = true;

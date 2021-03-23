@@ -19,4 +19,5 @@ import { LayoutModule } from './layout/layout.module';
     }
   ]
 })
-export class VexModule { }
+export class VexModule {
+}

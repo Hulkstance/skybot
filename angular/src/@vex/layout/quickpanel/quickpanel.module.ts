@@ -18,4 +18,5 @@ import { QuickpanelComponent } from './quickpanel.component';
   ],
   exports: [QuickpanelComponent]
 })
-export class QuickpanelModule { }
+export class QuickpanelModule {
+}

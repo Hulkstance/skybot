@@ -8,6 +8,7 @@ import { Directive } from '@angular/core';
 })
 export class PageLayoutContentDirective {
 
-  constructor() { }
+  constructor() {
+  }
 
 }

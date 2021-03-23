@@ -17,7 +17,8 @@ export class ShareBottomSheetComponent implements OnInit {
   logoTwitter = logoTwitter;
   logoFacebook = logoFacebook;
 
-  constructor(private _bottomSheetRef: MatBottomSheetRef<ShareBottomSheetComponent>) { }
+  constructor(private _bottomSheetRef: MatBottomSheetRef<ShareBottomSheetComponent>) {
+  }
 
   ngOnInit() {
   }

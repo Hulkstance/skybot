@@ -55,7 +55,8 @@ export class WidgetLargeGoalChartComponent implements OnInit {
   faCaretUp = faCaretUp;
   faCaretDown = faCaretDown;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

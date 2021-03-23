@@ -2,11 +2,11 @@ import { Component, Inject, LOCALE_ID, Renderer2 } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { Platform } from '@angular/cdk/platform';
 import icLayers from '@iconify/icons-ic/twotone-layers';
-import { LayoutService } from '../@vex/services/layout.service';
 import { ActivatedRoute } from '@angular/router';
 import { coerceBooleanProperty } from '@angular/cdk/coercion';
 import { filter, map } from 'rxjs/operators';
 
+import { LayoutService } from '../@vex/services/layout.service';
 import { ConfigService } from '../@vex/services/config.service';
 import { Settings } from 'luxon';
 import { NavigationService } from '../@vex/services/navigation.service';

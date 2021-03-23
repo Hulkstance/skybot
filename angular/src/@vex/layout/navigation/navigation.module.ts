@@ -26,4 +26,5 @@ import { ContainerModule } from '../../directives/container/container.module';
   ],
   exports: [NavigationComponent]
 })
-export class NavigationModule { }
+export class NavigationModule {
+}

@@ -4,13 +4,13 @@
   </button>
 
   <a *ngIf="isVerticalLayout$ | async" [routerLink]="['/']" class="ltr:mr-4 rtl:ml-4 block" fxLayout="row"
-    fxLayoutAlign="start center">
+     fxLayoutAlign="start center">
     <img class="w-8 select-none" src="assets/img/demo/logo.svg">
     <h1 [fxHide]="mobileQuery" class="title ltr:pl-4 rtl:pr-4 m-0 select-none">VEX</h1>
   </a>
 
   <button *ngIf="isHorizontalLayout$ | async" [fxHide]="mobileQuery" [matMenuTriggerFor]="addNewMenu" color="primary"
-    mat-raised-button type="button">ADD NEW
+          mat-raised-button type="button">ADD NEW
   </button>
 
   <mat-menu #addNewMenu="matMenu" [overlapTrigger]="false" xPosition="after" yPosition="below">
@@ -53,15 +53,15 @@
   </mat-menu>
 
   <div #megaMenuOriginRef class="ltr:ml-2 rtl:mr-2">
-    <button *ngIf="isHorizontalLayout$ | async" [fxHide]="mobileQuery" (click)="openMegaMenu(megaMenuOriginRef)"
-      color="primary" mat-button type="button">MEGA MENU
+    <button (click)="openMegaMenu(megaMenuOriginRef)" *ngIf="isHorizontalLayout$ | async" [fxHide]="mobileQuery"
+            color="primary" mat-button type="button">MEGA MENU
       <ic-icon [icon]="icArrowDropDown" class="ltr:-mr-1 rtl:-ml-1" inline="true"></ic-icon>
     </button>
   </div>
 
 
   <div *ngIf="(isVerticalLayout$ | async) && isNavbarInToolbar$ | async" [fxHide]="mobileQuery" class="px-gutter"
-    fxFlex="none" fxLayout="row" fxLayoutAlign="start center">
+       fxFlex="none" fxLayout="row" fxLayoutAlign="start center">
     <vex-navigation-item *ngFor="let item of navigationItems" [item]="item"></vex-navigation-item>
   </div>
 

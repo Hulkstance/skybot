@@ -1,13 +1,13 @@
 <div [class.boxed]="isBoxed$ | async"
-     [class.horizontal-layout]="!(isLayoutVertical$ | async)"
-     [class.is-mobile]="!(isDesktop$ | async)"
-     [class.vertical-layout]="isLayoutVertical$ | async"
+     [class.content-container]="containerEnabled$ | async"
      [class.has-fixed-footer]="(isFooterFixed$ | async) && isFooterVisible$ | async"
      [class.has-footer]="isFooterVisible$ | async"
+     [class.horizontal-layout]="!(isLayoutVertical$ | async)"
+     [class.is-mobile]="!(isDesktop$ | async)"
      [class.scroll-disabled]="scrollDisabled$ | async"
-     [class.toolbar-fixed]="isToolbarFixed$ | async"
      [class.sidenav-collapsed]="sidenavCollapsed$ | async"
-     [class.content-container]="containerEnabled$ | async"
+     [class.toolbar-fixed]="isToolbarFixed$ | async"
+     [class.vertical-layout]="isLayoutVertical$ | async"
      [class.with-search]="searchOpen$ | async"
      class="page-container">
 
