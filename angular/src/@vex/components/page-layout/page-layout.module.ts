@@ -1,13 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PageLayoutComponent } from './page-layout.component';
-import { PageLayoutHeaderDirective } from './page-layout-header.directive';
-import { PageLayoutContentDirective } from './page-layout-content.directive';
+
+import { PageLayoutComponent, PageLayoutContentDirective, PageLayoutHeaderDirective } from '@vex';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
+  imports: [CommonModule],
   declarations: [PageLayoutComponent, PageLayoutHeaderDirective, PageLayoutContentDirective],
   exports: [PageLayoutComponent, PageLayoutHeaderDirective, PageLayoutContentDirective]
 })

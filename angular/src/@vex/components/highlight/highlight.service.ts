@@ -1,6 +1,7 @@
 import { Inject, Injectable } from '@angular/core';
-import { HIGHLIGHT_OPTIONS, HighlightConfig, HighlightLanguage, HighlightOptions, HighlightResult } from './highlight.model';
 import * as hljs from 'highlight.js';
+
+import { HIGHLIGHT_OPTIONS, HighlightConfig, HighlightLanguage, HighlightOptions, HighlightResult } from '@vex';
 
 @Injectable()
 export class HighlightService {

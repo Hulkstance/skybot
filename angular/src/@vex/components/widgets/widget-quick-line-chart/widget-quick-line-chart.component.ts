@@ -1,11 +1,9 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
-import { ApexOptions } from '../../chart/chart.component';
-import { defaultChartOptions } from '../../../utils/default-chart-options';
 import { Icon } from '@visurel/iconify-angular';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
-import { ShareBottomSheetComponent } from '../../share-bottom-sheet/share-bottom-sheet.component';
 import icShare from '@iconify/icons-ic/twotone-share';
-import { scaleInOutAnimation } from '../../../animations/scale-in-out.animation';
+
+import { ApexOptions, defaultChartOptions, scaleInOutAnimation, ShareBottomSheetComponent } from '@vex';
 
 @Component({
   selector: 'vex-widget-quick-line-chart',

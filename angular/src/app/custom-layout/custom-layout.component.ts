@@ -1,12 +1,10 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { LayoutService } from '../../@vex/services/layout.service';
-import { filter, map, startWith } from 'rxjs/operators';
 import { NavigationEnd, Router } from '@angular/router';
-import { checkRouterChildsData } from '../../@vex/utils/check-router-childs-data';
 import { BreakpointObserver } from '@angular/cdk/layout';
-import { ConfigService } from '../../@vex/services/config.service';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
-import { SidebarComponent } from '../../@vex/components/sidebar/sidebar.component';
+import { filter, map, startWith } from 'rxjs/operators';
+
+import { checkRouterChildData, ConfigService, LayoutService, SidebarComponent } from '@vex';
 
 @UntilDestroy()
 @Component({
@@ -23,7 +21,7 @@ export class CustomLayoutComponent implements OnInit {
   toolbarShadowEnabled$ = this.router.events.pipe(
     filter(event => event instanceof NavigationEnd),
     startWith(null),
-    map(() => checkRouterChildsData(this.router.routerState.root.snapshot, data => data.toolbarShadowEnabled))
+    map(() => checkRouterChildData(this.router.routerState.root.snapshot, data => data.toolbarShadowEnabled))
   );
 
   @ViewChild('configPanel', { static: true }) configPanel: SidebarComponent;

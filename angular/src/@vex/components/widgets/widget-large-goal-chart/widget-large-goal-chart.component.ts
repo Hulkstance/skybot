@@ -3,9 +3,8 @@ import icMoreHoriz from '@iconify/icons-ic/twotone-more-horiz';
 import icCloudDownload from '@iconify/icons-ic/twotone-cloud-download';
 import faCaretUp from '@iconify/icons-fa-solid/caret-up';
 import faCaretDown from '@iconify/icons-fa-solid/caret-down';
-import { ApexOptions } from '../../chart/chart.component';
-import { defaultChartOptions } from '../../../utils/default-chart-options';
-import { createDateArray } from '../../../utils/create-date-array';
+
+import { ApexOptions, createDateArray, defaultChartOptions } from '@vex';
 
 @Component({
   selector: 'vex-widget-large-goal-chart',

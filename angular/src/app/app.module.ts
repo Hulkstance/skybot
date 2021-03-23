@@ -4,11 +4,11 @@ import { NgModule } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 import { I18nModule } from './i18n';
-import { VexModule } from '../@vex/vex.module';
+import { VexModule } from '@vex';
 import { AppComponent } from './app.component';
 import { CustomLayoutModule } from './custom-layout/custom-layout.module';
-import { CoreModule } from './core';
-import { SharedModule } from './shared';
+import { CoreModule } from '@core';
+import { SharedModule } from '@shared';
 import { DashboardModule } from './dashboard';
 import { AppRoutingModule } from './app-routing.module';
 

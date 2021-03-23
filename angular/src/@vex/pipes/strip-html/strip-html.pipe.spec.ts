@@ -1,4 +1,4 @@
-import { StripHtmlPipe } from './strip-html.pipe';
+import { StripHtmlPipe } from '@vex';
 
 describe('StripHtmlPipe', () => {
   it('create an instance', () => {

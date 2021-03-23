@@ -1,6 +1,6 @@
 import { Directive, EventEmitter, Input, NgZone, OnChanges, Output, SimpleChanges } from '@angular/core';
-import { HighlightResult } from './highlight.model';
-import { HighlightService } from './highlight.service';
+
+import { HighlightResult, HighlightService } from '@vex';
 
 @Directive({
   selector: '[vexHighlight]',

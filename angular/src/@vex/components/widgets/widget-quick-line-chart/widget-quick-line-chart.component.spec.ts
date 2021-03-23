@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { WidgetQuickLineChartComponent } from './widget-quick-line-chart.component';
+import { WidgetQuickLineChartComponent } from '@vex';
 
 describe('WidgetQuickLineComponent', () => {
   let component: WidgetQuickLineChartComponent;

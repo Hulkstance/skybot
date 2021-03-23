@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS, MatFormFieldDefaultOptions } from '@angular/material/form-field';
 
-import { LayoutModule } from './layout/layout.module';
+import { LayoutModule } from '@vex/layout';
 
 @NgModule({
   imports: [

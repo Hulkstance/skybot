@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ScrollbarComponent } from './scrollbar.component';
+
+import { ScrollbarComponent } from '@vex';
 
 @NgModule({
   declarations: [ScrollbarComponent],

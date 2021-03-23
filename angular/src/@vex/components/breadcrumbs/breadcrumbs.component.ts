@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import icHome from '@iconify/icons-ic/twotone-home';
-import { trackByValue } from '../../utils/track-by';
+
+import { trackByValue } from '@vex/utils/track-by';
 
 @Component({
   selector: 'vex-breadcrumbs',

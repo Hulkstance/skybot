@@ -7,7 +7,7 @@ import { DOCUMENT } from '@angular/common';
 import { filter, map, startWith, withLatestFrom } from 'rxjs/operators';
 
 import { LayoutService } from '../services/layout.service';
-import { checkRouterChildsData } from '../utils/check-router-childs-data';
+import { checkRouterChildData } from '../utils/check-router-child-data';
 import { ConfigService } from '../services/config.service';
 
 @UntilDestroy()
@@ -34,13 +34,13 @@ export class LayoutComponent implements OnInit, AfterViewInit {
   scrollDisabled$ = this.router.events.pipe(
     filter(event => event instanceof NavigationEnd),
     startWith(null),
-    map(() => checkRouterChildsData(this.router.routerState.root.snapshot, data => data.scrollDisabled))
+    map(() => checkRouterChildData(this.router.routerState.root.snapshot, data => data.scrollDisabled))
   );
 
   containerEnabled$ = this.router.events.pipe(
     filter(event => event instanceof NavigationEnd),
     startWith(null),
-    map(() => checkRouterChildsData(this.router.routerState.root.snapshot, data => data.containerEnabled))
+    map(() => checkRouterChildData(this.router.routerState.root.snapshot, data => data.containerEnabled))
   );
 
   searchOpen$ = this.layoutService.searchOpen$;

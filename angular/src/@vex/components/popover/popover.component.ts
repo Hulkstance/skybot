@@ -1,6 +1,6 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
-import { PopoverContent, PopoverRef } from './popover-ref';
-import { popoverAnimation } from '../../animations/popover.animation';
+
+import { popoverAnimation, PopoverContent, PopoverRef } from '@vex';
 
 @Component({
   templateUrl: './popover.component.html',

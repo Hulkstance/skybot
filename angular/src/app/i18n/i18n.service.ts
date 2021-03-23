@@ -3,9 +3,9 @@ import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import { Subscription } from 'rxjs';
 
-import { Logger } from '../core';
-import enUS from '../../translations/en-US.json';
-import bgBG from '../../translations/bg-BG.json';
+import { Logger } from '@core';
+import enUS from '@translations/en-US.json';
+import bgBG from '@translations/bg-BG.json';
 
 const log = new Logger('I18nService');
 const languageKey = 'language';

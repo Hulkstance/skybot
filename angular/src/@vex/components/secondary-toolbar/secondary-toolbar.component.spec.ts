@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { SecondaryToolbarComponent } from './secondary-toolbar.component';
+import { SecondaryToolbarComponent } from '@vex';
 
 describe('SecondaryToolbarComponent', () => {
   let component: SecondaryToolbarComponent;

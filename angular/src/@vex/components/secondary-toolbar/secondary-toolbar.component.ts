@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ConfigService } from '../../services/config.service';
 import { map } from 'rxjs/operators';
+
+import { ConfigService } from '@vex';
 
 @Component({
   selector: 'vex-secondary-toolbar',

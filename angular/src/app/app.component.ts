@@ -6,13 +6,8 @@ import { ActivatedRoute } from '@angular/router';
 import { coerceBooleanProperty } from '@angular/cdk/coercion';
 import { filter, map } from 'rxjs/operators';
 
-import { LayoutService } from '../@vex/services/layout.service';
-import { ConfigService } from '../@vex/services/config.service';
+import { ConfigName, ConfigService, LayoutService, NavigationService, SplashScreenService, Style, StyleService } from '@vex';
 import { Settings } from 'luxon';
-import { NavigationService } from '../@vex/services/navigation.service';
-import { SplashScreenService } from '../@vex/services/splash-screen.service';
-import { Style, StyleService } from '../@vex/services/style.service';
-import { ConfigName } from '../@vex/interfaces/config-name.model';
 
 @Component({
   selector: 'vex-root',
@@ -57,10 +52,11 @@ export class AppComponent {
       sidenav: {
         title: 'Skybot',
         imageUrl: '//placehold.it/100x100',
-        showCollapsePin: true
+        showCollapsePin: true,
+        state: 'collapsed'
       },
       footer: {
-        visible: false
+        visible: true
       }
     });
 

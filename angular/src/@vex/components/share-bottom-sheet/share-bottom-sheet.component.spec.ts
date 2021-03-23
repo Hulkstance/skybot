@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { ShareBottomSheetComponent } from './share-bottom-sheet.component';
+import { ShareBottomSheetComponent } from '@vex';
 
 describe('ShareBottomSheetComponent', () => {
   let component: ShareBottomSheetComponent;

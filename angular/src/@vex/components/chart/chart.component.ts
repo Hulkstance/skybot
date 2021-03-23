@@ -11,7 +11,7 @@ import {
   ViewChild
 } from '@angular/core';
 import { asapScheduler } from 'rxjs';
-// @ts-ignore
+
 import ApexCharts from 'apexcharts';
 
 export interface ApexOptions {

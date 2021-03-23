@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ContainerDirective } from './container.directive';
+
+import { ContainerDirective } from '@vex';
 
 @NgModule({
   declarations: [ContainerDirective],

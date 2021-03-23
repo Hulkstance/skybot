@@ -6,7 +6,8 @@ import icContactSupport from '@iconify/icons-ic/twotone-contact-support';
 import icContacts from '@iconify/icons-ic/twotone-contacts';
 import icAssessment from '@iconify/icons-ic/twotone-assessment';
 import icBook from '@iconify/icons-ic/twotone-book';
-import { PopoverRef } from '../popover/popover-ref';
+
+import { PopoverRef } from '@vex';
 
 export interface MegaMenuFeature {
   icon: Icon;

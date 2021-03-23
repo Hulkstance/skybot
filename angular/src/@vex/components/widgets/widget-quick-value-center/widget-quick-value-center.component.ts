@@ -5,8 +5,8 @@ import faCaretDown from '@iconify/icons-fa-solid/caret-down';
 import icHelp from '@iconify/icons-ic/help-outline';
 import icShare from '@iconify/icons-ic/twotone-share';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
-import { ShareBottomSheetComponent } from '../../share-bottom-sheet/share-bottom-sheet.component';
-import { scaleInOutAnimation } from '../../../animations/scale-in-out.animation';
+
+import { scaleInOutAnimation, ShareBottomSheetComponent } from '@vex';
 
 @Component({
   selector: 'vex-widget-quick-value-center',

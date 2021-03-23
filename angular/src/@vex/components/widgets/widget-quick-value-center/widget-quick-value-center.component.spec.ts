@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { WidgetQuickValueCenterComponent } from './widget-quick-value-center.component';
+import { WidgetQuickValueCenterComponent } from '@vex';
 
 describe('WidgetQuickCenterComponent', () => {
   let component: WidgetQuickValueCenterComponent;

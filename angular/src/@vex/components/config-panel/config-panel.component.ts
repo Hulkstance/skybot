@@ -58,7 +58,7 @@ export class ConfigPanelComponent implements OnInit {
     this.styleService.setStyle(style);
   }
 
-  selectColor(color: ColorVariable) {
+  selectColor(color) {
     this.selectedColor = color;
     if (this.document) {
       this.document.documentElement.style.setProperty('--color-primary', color.default.replace('rgb(', '').replace(')', ''));

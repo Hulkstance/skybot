@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { SearchComponent } from './search.component';
+import { SearchComponent } from '@vex';
 
 describe('SearchComponent', () => {
   let component: SearchComponent;

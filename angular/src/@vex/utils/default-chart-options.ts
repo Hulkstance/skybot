@@ -1,5 +1,4 @@
-import { ApexOptions } from '../components/chart/chart.component';
-import { mergeDeep } from './merge-deep';
+import { ApexOptions, mergeDeep } from '@vex';
 
 export const defaultChartOptions = (options: Partial<ApexOptions> = {}): ApexOptions => mergeDeep({
   grid: {

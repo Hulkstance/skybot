@@ -1,4 +1,4 @@
-import { RelativeDateTimePipe } from './relative-date-time.pipe';
+import { RelativeDateTimePipe } from '@vex';
 
 describe('RelativeDateTimePipe', () => {
   it('create an instance', () => {

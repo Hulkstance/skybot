@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
-import { HighlightDirective } from './highlight.directive';
-import { HIGHLIGHT_OPTIONS, HighlightOptions } from './highlight.model';
+
+import { HIGHLIGHT_OPTIONS, HighlightDirective, HighlightOptions, HighlightService } from '@vex';
+
 /**
  * Import every language you wish to highlight here
  * NOTE: The name of each language must match the file name its imported from
@@ -8,7 +9,6 @@ import { HIGHLIGHT_OPTIONS, HighlightOptions } from './highlight.model';
 import * as xml from 'highlight.js/lib/languages/xml';
 import * as scss from 'highlight.js/lib/languages/scss';
 import * as typescript from 'highlight.js/lib/languages/typescript';
-import { HighlightService } from './highlight.service';
 
 /**
  * Import every language you wish to highlight here

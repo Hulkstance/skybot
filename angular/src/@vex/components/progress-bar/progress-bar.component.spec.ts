@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { ProgressBarComponent } from './progress-bar.component';
+import { ProgressBarComponent } from '@vex';
 
 describe('ProgressBarComponent', () => {
   let component: ProgressBarComponent;

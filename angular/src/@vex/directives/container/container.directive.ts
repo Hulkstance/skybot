@@ -2,7 +2,7 @@ import { ChangeDetectorRef, Directive, HostBinding } from '@angular/core';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import { distinctUntilChanged, map } from 'rxjs/operators';
 
-import { ConfigService } from '../../services/config.service';
+import { ConfigService } from '@vex';
 
 @UntilDestroy()
 @Directive({

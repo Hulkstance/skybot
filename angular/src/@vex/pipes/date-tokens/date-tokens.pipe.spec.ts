@@ -1,4 +1,4 @@
-import { DateTokensPipe } from './date-tokens.pipe';
+import { DateTokensPipe } from '@vex';
 
 describe('DateTokensPipe', () => {
   it('create an instance', () => {

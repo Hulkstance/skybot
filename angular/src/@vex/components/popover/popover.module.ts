@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PopoverComponent } from './popover.component';
 import { OverlayModule } from '@angular/cdk/overlay';
+
+import { PopoverComponent } from '@vex';
 
 @NgModule({
   declarations: [PopoverComponent],

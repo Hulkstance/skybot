@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { NavigationItemComponent } from './navigation-item.component';
+import { NavigationItemComponent } from '@vex';
 
 describe('NavigationItemComponent', () => {
   let component: NavigationItemComponent;

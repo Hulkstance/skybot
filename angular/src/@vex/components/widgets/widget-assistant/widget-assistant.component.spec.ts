@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { WidgetAssistantComponent } from './widget-assistant.component';
+import { WidgetAssistantComponent } from '@vex';
 
 describe('WidgetAssistantComponent', () => {
   let component: WidgetAssistantComponent;
