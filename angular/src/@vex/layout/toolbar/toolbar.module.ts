@@ -8,19 +8,17 @@ import { MatRippleModule } from '@angular/material/core';
 import { IconModule } from '@visurel/iconify-angular';
 import { RouterModule } from '@angular/router';
 
-import { ToolbarComponent } from './toolbar.component';
-import { ToolbarNotificationsModule } from './toolbar-notifications/toolbar-notifications.module';
-import { ToolbarUserModule } from './toolbar-user/toolbar-user.module';
-import { ToolbarSearchModule } from './toolbar-search/toolbar-search.module';
-import { NavigationModule } from '../navigation/navigation.module';
-import { NavigationItemModule } from '../../components/navigation-item/navigation-item.module';
-import { MegaMenuModule } from '../../components/mega-menu/mega-menu.module';
-import { ContainerModule } from '../../directives/container/container.module';
+import { ToolbarComponent } from '@vex/layout/toolbar/toolbar.component';
+import { ToolbarNotificationsModule } from '@vex/layout/toolbar/toolbar-notifications/toolbar-notifications.module';
+import { ToolbarUserModule } from '@vex/layout/toolbar/toolbar-user/toolbar-user.module';
+import { ToolbarSearchModule } from '@vex/layout/toolbar/toolbar-search/toolbar-search.module';
+import { NavigationModule } from '@vex/layout/navigation/navigation.module';
+import { NavigationItemModule } from '@vex/components/navigation-item/navigation-item.module';
+import { ContainerModule } from '@vex/directives/container/container.module';
+import { MegaMenuModule } from '@vex/components/mega-menu/mega-menu.module';
 
 @NgModule({
-  declarations: [
-    ToolbarComponent
-  ],
+  declarations: [ToolbarComponent],
   imports: [
     CommonModule,
     FlexLayoutModule,
@@ -38,9 +36,7 @@ import { ContainerModule } from '../../directives/container/container.module';
     MegaMenuModule,
     ContainerModule
   ],
-  exports: [
-    ToolbarComponent
-  ]
+  exports: [ToolbarComponent]
 })
 export class ToolbarModule {
 }

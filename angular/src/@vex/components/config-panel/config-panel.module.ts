@@ -8,7 +8,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatRippleModule } from '@angular/material/core';
 
-import { ConfigPanelComponent, ConfigPanelToggleComponent } from '@vex';
+import { ConfigPanelComponent } from './config-panel.component';
+import { ConfigPanelToggleComponent } from './config-panel-toggle/config-panel-toggle.component';
 
 @NgModule({
   imports: [

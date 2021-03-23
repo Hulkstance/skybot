@@ -6,7 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { IconModule } from '@visurel/iconify-angular';
 
-import { ToolbarSearchComponent } from './toolbar-search.component';
+import { ToolbarSearchComponent } from '@vex/layout/toolbar/toolbar-search/toolbar-search.component';
 
 @NgModule({
   declarations: [ToolbarSearchComponent],

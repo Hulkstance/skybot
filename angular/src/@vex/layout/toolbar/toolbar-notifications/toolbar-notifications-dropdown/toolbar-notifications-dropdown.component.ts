@@ -11,10 +11,10 @@ import icDescription from '@iconify/icons-ic/twotone-description';
 import icFeedback from '@iconify/icons-ic/twotone-feedback';
 import icVerifiedUser from '@iconify/icons-ic/twotone-verified-user';
 import icFileCopy from '@iconify/icons-ic/twotone-file-copy';
-
-import { Notification } from '../interfaces/notification.interface';
 import { DateTime } from 'luxon';
-import { trackById } from '../../../../utils/track-by';
+
+import { Notification } from '@vex/layout/toolbar/toolbar-notifications/interfaces/notification.interface';
+import { trackById } from '@vex/utils/track-by';
 
 @Component({
   selector: 'vex-toolbar-notifications-dropdown',

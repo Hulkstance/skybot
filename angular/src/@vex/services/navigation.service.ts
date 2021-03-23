@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 
-import { NavigationDropdown, NavigationItem, NavigationLink, NavigationSubheading } from '../interfaces/navigation-item.interface';
+import { NavigationDropdown, NavigationItem, NavigationLink, NavigationSubheading } from '@vex/interfaces/navigation-item.interface';
 
 @Injectable({
   providedIn: 'root'

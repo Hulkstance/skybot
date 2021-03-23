@@ -4,10 +4,15 @@ import { Platform } from '@angular/cdk/platform';
 import icLayers from '@iconify/icons-ic/twotone-layers';
 import { ActivatedRoute } from '@angular/router';
 import { coerceBooleanProperty } from '@angular/cdk/coercion';
+import { Settings } from 'luxon';
 import { filter, map } from 'rxjs/operators';
 
-import { ConfigName, ConfigService, LayoutService, NavigationService, SplashScreenService, Style, StyleService } from '@vex';
-import { Settings } from 'luxon';
+import { ConfigService } from '@vex/services/config.service';
+import { Style, StyleService } from '@vex/services/style.service';
+import { LayoutService } from '@vex/services/layout.service';
+import { NavigationService } from '@vex/services/navigation.service';
+import { SplashScreenService } from '@vex/services/splash-screen.service';
+import { ConfigName } from '@vex/interfaces/config-name.model';
 
 @Component({
   selector: 'vex-root',

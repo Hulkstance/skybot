@@ -9,9 +9,9 @@ import { RouterModule } from '@angular/router';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { IconModule } from '@visurel/iconify-angular';
 
-import { ToolbarUserComponent } from './toolbar-user.component';
-import { ToolbarUserDropdownComponent } from './toolbar-user-dropdown/toolbar-user-dropdown.component';
-import { RelativeDateTimeModule } from '../../../pipes/relative-date-time/relative-date-time.module';
+import { ToolbarUserComponent } from '@vex/layout/toolbar/toolbar-user/toolbar-user.component';
+import { ToolbarUserDropdownComponent } from '@vex/layout/toolbar/toolbar-user/toolbar-user-dropdown/toolbar-user-dropdown.component';
+import { RelativeDateTimeModule } from '@vex/pipes/relative-date-time/relative-date-time.module';
 
 @NgModule({
   declarations: [ToolbarUserComponent, ToolbarUserDropdownComponent],

@@ -5,7 +5,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { RouterModule } from '@angular/router';
 import { MatRippleModule } from '@angular/material/core';
 
-import { QuickPanelComponent } from './quick-panel.component';
+import { QuickPanelComponent } from '@vex/layout/quick-panel/quick-panel.component';
 
 @NgModule({
   declarations: [QuickPanelComponent],

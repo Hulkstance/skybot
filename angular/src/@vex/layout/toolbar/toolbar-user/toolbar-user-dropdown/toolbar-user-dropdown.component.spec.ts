@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { ToolbarUserDropdownComponent } from './toolbar-user-dropdown.component';
+import { ToolbarUserDropdownComponent } from '@vex/layout/toolbar/toolbar-user/toolbar-user-dropdown/toolbar-user-dropdown.component';
 
 describe('ToolbarUserDropdownComponent', () => {
   let component: ToolbarUserDropdownComponent;

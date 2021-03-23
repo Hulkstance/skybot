@@ -1,18 +1,19 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { ConfigService } from '../../services/config.service';
 import { MatSlideToggleChange } from '@angular/material/slide-toggle';
-import { first, map } from 'rxjs/operators';
 import icSettings from '@iconify/icons-ic/twotone-settings';
-import { LayoutService } from '../../services/layout.service';
 import icCheck from '@iconify/icons-ic/twotone-check';
 import { MatRadioChange } from '@angular/material/radio';
 import { ActivatedRoute } from '@angular/router';
 import { coerceBooleanProperty } from '@angular/cdk/coercion';
-import { Style, StyleService } from '../../services/style.service';
-import { ConfigName } from '../../interfaces/config-name.model';
-import { ColorVariable, colorVariables } from './color-variables';
 import { DOCUMENT } from '@angular/common';
 import icClose from '@iconify/icons-ic/twotone-close';
+import { first, map } from 'rxjs/operators';
+
+import { ConfigService } from '@vex/services/config.service';
+import { Style, StyleService } from '@vex/services/style.service';
+import { LayoutService } from '@vex/services/layout.service';
+import { ColorVariable, colorVariables } from '@vex/components/config-panel/color-variables';
+import { ConfigName } from '@vex/interfaces/config-name.model';
 
 @Component({
   selector: 'vex-config-panel',
@@ -109,7 +110,6 @@ export class ConfigPanelComponent implements OnInit {
       }
     });
   }
-
 
   /*
   sidenavCollapsedChange(change: MatCheckboxChange) {

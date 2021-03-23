@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { RelativeDateTimePipe } from './relative-date-time.pipe';
+import { RelativeDateTimePipe } from '@vex/pipes/relative-date-time/relative-date-time.pipe';
 
 @NgModule({
   declarations: [RelativeDateTimePipe],

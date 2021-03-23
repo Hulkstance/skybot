@@ -5,7 +5,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { IconModule } from '@visurel/iconify-angular';
 
-import { BreadcrumbComponent, BreadcrumbsComponent } from '@vex';
+import { BreadcrumbsComponent } from '@vex/components/breadcrumbs/breadcrumbs.component';
+import { BreadcrumbComponent } from '@vex/components/breadcrumbs/breadcrumb/breadcrumb.component';
 
 @NgModule({
   imports: [

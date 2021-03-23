@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { IconModule } from '@visurel/iconify-angular';
 
-import { ShareBottomSheetComponent } from '@vex';
+import { ShareBottomSheetComponent } from '@vex/components/share-bottom-sheet/share-bottom-sheet.component';
 
 @NgModule({
   declarations: [ShareBottomSheetComponent],

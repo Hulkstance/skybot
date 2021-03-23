@@ -1,11 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { trackByRoute } from '../../utils/track-by';
-import { NavigationService } from '../../services/navigation.service';
 import icRadioButtonChecked from '@iconify/icons-ic/twotone-radio-button-checked';
 import icRadioButtonUnchecked from '@iconify/icons-ic/twotone-radio-button-unchecked';
-import { LayoutService } from '../../services/layout.service';
-import { ConfigService } from '../../services/config.service';
 import { map } from 'rxjs/operators';
+
+import { NavigationService } from '@vex/services/navigation.service';
+import { LayoutService } from '@vex/services/layout.service';
+import { ConfigService } from '@vex/services/config.service';
+import { trackByRoute } from '@vex/utils/track-by';
 
 @Component({
   selector: 'vex-sidenav',

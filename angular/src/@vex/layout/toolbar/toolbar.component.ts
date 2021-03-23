@@ -14,11 +14,11 @@ import icArrowDropDown from '@iconify/icons-ic/twotone-arrow-drop-down';
 import icSearch from '@iconify/icons-ic/twotone-search';
 import { map } from 'rxjs/operators';
 
-import { LayoutService } from '../../services/layout.service';
-import { ConfigService } from '../../services/config.service';
-import { NavigationService } from '../../services/navigation.service';
-import { PopoverService } from '../../components/popover/popover.service';
-import { MegaMenuComponent } from '../../components/mega-menu/mega-menu.component';
+import { LayoutService } from '@vex/services/layout.service';
+import { ConfigService } from '@vex/services/config.service';
+import { NavigationService } from '@vex/services/navigation.service';
+import { PopoverService } from '@vex/components/popover/popover.service';
+import { MegaMenuComponent } from '@vex/components/mega-menu/mega-menu.component';
 
 @Component({
   selector: 'vex-toolbar',

@@ -4,7 +4,10 @@ import { BreakpointObserver } from '@angular/cdk/layout';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import { filter, map, startWith } from 'rxjs/operators';
 
-import { checkRouterChildData, ConfigService, LayoutService, SidebarComponent } from '@vex';
+import { checkRouterChildData } from '@vex/utils/check-router-child-data';
+import { SidebarComponent } from '@vex/components/sidebar/sidebar.component';
+import { LayoutService } from '@vex/services/layout.service';
+import { ConfigService } from '@vex/services/config.service';
 
 @UntilDestroy()
 @Component({

@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { WidgetLargeChartComponent } from '@vex';
+import { WidgetLargeChartComponent } from '@vex/components/widgets/widget-large-chart/widget-large-chart.component';
 
 describe('WidgetLargeChartComponent', () => {
   let component: WidgetLargeChartComponent;

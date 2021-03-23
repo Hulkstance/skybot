@@ -6,7 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
 import { MatRippleModule } from '@angular/material/core';
 
-import { NavigationItemComponent } from '@vex';
+import { NavigationItemComponent } from '@vex/components/navigation-item/navigation-item.component';
 
 @NgModule({
   declarations: [NavigationItemComponent],

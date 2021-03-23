@@ -5,7 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { IconModule } from '@visurel/iconify-angular';
 import { RouterModule } from '@angular/router';
 
-import { MegaMenuComponent } from '@vex';
+import { MegaMenuComponent } from '@vex/components/mega-menu/mega-menu.component';
 
 @NgModule({
   declarations: [MegaMenuComponent],

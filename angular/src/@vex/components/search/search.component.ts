@@ -4,7 +4,8 @@ import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import { FormControl } from '@angular/forms';
 import { filter } from 'rxjs/operators';
 
-import { LayoutService, SearchService } from '@vex';
+import { SearchService } from '@vex/services/search.service';
+import { LayoutService } from '@vex/services/layout.service';
 
 @UntilDestroy()
 @Component({

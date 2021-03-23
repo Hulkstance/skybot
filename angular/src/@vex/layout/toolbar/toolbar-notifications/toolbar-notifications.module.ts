@@ -9,10 +9,10 @@ import { RouterModule } from '@angular/router';
 import { MatRippleModule } from '@angular/material/core';
 import { IconModule } from '@visurel/iconify-angular';
 
-import { ToolbarNotificationsComponent } from './toolbar-notifications.component';
-import { PopoverModule } from '../../../components/popover/popover.module';
-import { RelativeDateTimeModule } from '../../../pipes/relative-date-time/relative-date-time.module';
-import { ToolbarNotificationsDropdownComponent } from './toolbar-notifications-dropdown/toolbar-notifications-dropdown.component';
+import { PopoverModule } from '@vex/components/popover/popover.module';
+import { RelativeDateTimeModule } from '@vex/pipes/relative-date-time/relative-date-time.module';
+import { ToolbarNotificationsComponent } from '@vex/layout/toolbar/toolbar-notifications/toolbar-notifications.component';
+import { ToolbarNotificationsDropdownComponent } from '@vex/layout/toolbar/toolbar-notifications/toolbar-notifications-dropdown/toolbar-notifications-dropdown.component';
 
 @NgModule({
   declarations: [

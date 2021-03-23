@@ -4,9 +4,9 @@ import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import icKeyboardArrowRight from '@iconify/icons-ic/twotone-keyboard-arrow-right';
 import { filter } from 'rxjs/operators';
 
-import { NavigationDropdown, NavigationItem, NavigationLink } from '../../../interfaces/navigation-item.interface';
-import { dropdownAnimation } from '../../../animations/dropdown.animation';
-import { NavigationService } from '../../../services/navigation.service';
+import { NavigationDropdown, NavigationItem, NavigationLink } from '@vex/interfaces/navigation-item.interface';
+import { dropdownAnimation } from '@vex/animations/dropdown.animation';
+import { NavigationService } from '@vex/services/navigation.service';
 
 @UntilDestroy()
 @Component({

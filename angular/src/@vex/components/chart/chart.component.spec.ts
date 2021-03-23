@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { ChartComponent } from '@vex';
+import { ChartComponent } from '@vex/components/chart/chart.component';
 
 describe('ChartComponent', () => {
   let component: ChartComponent;

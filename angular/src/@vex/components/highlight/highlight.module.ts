@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 
-import { HIGHLIGHT_OPTIONS, HighlightDirective, HighlightOptions, HighlightService } from '@vex';
+import { HighlightDirective } from './highlight.directive';
+import { HIGHLIGHT_OPTIONS, HighlightOptions } from './highlight.model';
+import { HighlightService } from './highlight.service';
 
 /**
  * Import every language you wish to highlight here

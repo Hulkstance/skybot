@@ -6,7 +6,8 @@ import { IconModule } from '@visurel/iconify-angular';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatButtonModule } from '@angular/material/button';
 
-import { ShareBottomSheetModule, WidgetQuickValueStartComponent } from '@vex';
+import { WidgetQuickValueStartComponent } from '@vex/components/widgets/widget-quick-value-start/widget-quick-value-start.component';
+import { ShareBottomSheetModule } from '@vex/components/share-bottom-sheet/share-bottom-sheet.module';
 
 @NgModule({
   declarations: [WidgetQuickValueStartComponent],

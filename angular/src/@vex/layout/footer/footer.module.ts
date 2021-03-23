@@ -4,8 +4,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
 import { IconModule } from '@visurel/iconify-angular';
 
-import { FooterComponent } from './footer.component';
-import { ContainerModule } from '../../directives/container/container.module';
+import { FooterComponent } from '@vex/layout/footer/footer.component';
+import { ContainerModule } from '@vex/directives/container/container.module';
 
 @NgModule({
   imports: [

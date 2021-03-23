@@ -6,7 +6,7 @@ import { MatRippleModule } from '@angular/material/core';
 import { IconModule } from '@visurel/iconify-angular';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { SidenavItemComponent } from './sidenav-item.component';
+import { SidenavItemComponent } from '@vex/layout/sidenav/sidenav-item/sidenav-item.component';
 
 @NgModule({
   declarations: [SidenavItemComponent],

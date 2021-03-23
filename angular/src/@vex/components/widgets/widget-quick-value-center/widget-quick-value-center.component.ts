@@ -6,7 +6,8 @@ import icHelp from '@iconify/icons-ic/help-outline';
 import icShare from '@iconify/icons-ic/twotone-share';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 
-import { scaleInOutAnimation, ShareBottomSheetComponent } from '@vex';
+import { scaleInOutAnimation } from '@vex/animations/scale-in-out.animation';
+import { ShareBottomSheetComponent } from '@vex/components/share-bottom-sheet/share-bottom-sheet.component';
 
 @Component({
   selector: 'vex-widget-quick-value-center',

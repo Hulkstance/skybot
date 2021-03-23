@@ -4,7 +4,9 @@ import icCloudDownload from '@iconify/icons-ic/twotone-cloud-download';
 import faCaretUp from '@iconify/icons-fa-solid/caret-up';
 import faCaretDown from '@iconify/icons-fa-solid/caret-down';
 
-import { ApexOptions, createDateArray, defaultChartOptions } from '@vex';
+import { ApexOptions } from '@vex/components/chart/chart.component';
+import { defaultChartOptions } from '@vex/utils/default-chart-options';
+import { createDateArray } from '@vex/utils/create-date-array';
 
 @Component({
   selector: 'vex-widget-large-goal-chart',

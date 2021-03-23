@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { DateTokensPipe } from './date-tokens.pipe';
+import { DateTokensPipe } from '@vex/pipes/date-tokens/date-tokens.pipe';
 
 @NgModule({
   declarations: [DateTokensPipe],

@@ -5,7 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { IconModule } from '@visurel/iconify-angular';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { SearchComponent } from '@vex';
+import { SearchComponent } from '@vex/components/search/search.component';
 
 @NgModule({
   declarations: [SearchComponent],

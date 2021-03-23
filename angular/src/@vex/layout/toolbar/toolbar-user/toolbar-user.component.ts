@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import icPerson from '@iconify/icons-ic/twotone-person';
 
-import { PopoverService } from '../../../components/popover/popover.service';
-import { ToolbarUserDropdownComponent } from './toolbar-user-dropdown/toolbar-user-dropdown.component';
+import { PopoverService } from '@vex/components/popover/popover.service';
+import { ToolbarUserDropdownComponent } from '@vex/layout/toolbar/toolbar-user/toolbar-user-dropdown/toolbar-user-dropdown.component';
 
 @Component({
   selector: 'vex-toolbar-user',

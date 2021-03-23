@@ -5,7 +5,7 @@ import { MatSort } from '@angular/material/sort';
 import icMoreHoriz from '@iconify/icons-ic/twotone-more-horiz';
 import icCloudDownload from '@iconify/icons-ic/twotone-cloud-download';
 
-import { TableColumn } from '@vex';
+import { TableColumn } from '@vex/interfaces/table-column.interface';
 
 @Component({
   selector: 'vex-widget-table',

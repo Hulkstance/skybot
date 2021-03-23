@@ -6,9 +6,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { IconModule } from '@visurel/iconify-angular';
 
-import { SidenavComponent } from './sidenav.component';
-import { SidenavItemModule } from './sidenav-item/sidenav-item.module';
-import { ScrollbarModule } from '../../components/scrollbar/scrollbar.module';
+import { SidenavComponent } from '@vex/layout/sidenav/sidenav.component';
+import { SidenavItemModule } from '@vex/layout/sidenav/sidenav-item/sidenav-item.module';
+import { ScrollbarModule } from '@vex/components/scrollbar/scrollbar.module';
 
 @NgModule({
   declarations: [SidenavComponent],

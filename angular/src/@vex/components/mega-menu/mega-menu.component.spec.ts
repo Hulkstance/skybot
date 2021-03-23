@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { MegaMenuComponent } from '@vex';
+import { MegaMenuComponent } from '@vex/components/mega-menu/mega-menu.component';
 
 describe('MegaMenuComponent', () => {
   let component: MegaMenuComponent;

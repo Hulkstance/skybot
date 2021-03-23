@@ -9,7 +9,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { IconModule } from '@visurel/iconify-angular';
 
-import { WidgetTableComponent } from '@vex';
+import { WidgetTableComponent } from '@vex/components/widgets/widget-table/widget-table.component';
 
 @NgModule({
   declarations: [WidgetTableComponent],

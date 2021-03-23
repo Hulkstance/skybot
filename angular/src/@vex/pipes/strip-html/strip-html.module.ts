@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { StripHtmlPipe } from './strip-html.pipe';
+import { StripHtmlPipe } from '@vex/pipes/strip-html/strip-html.pipe';
 
 @NgModule({
   declarations: [StripHtmlPipe],

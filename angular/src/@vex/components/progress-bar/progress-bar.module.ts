@@ -4,7 +4,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { LoadingBarModule } from '@ngx-loading-bar/core';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 
-import { ProgressBarComponent } from '@vex';
+import { ProgressBarComponent } from '@vex/components/progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [ProgressBarComponent],

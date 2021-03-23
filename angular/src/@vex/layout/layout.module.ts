@@ -4,8 +4,8 @@ import { RouterModule } from '@angular/router';
 import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { LayoutComponent } from './layout.component';
-import { ProgressBarModule } from '../components/progress-bar/progress-bar.module';
-import { SearchModule } from '../components/search/search.module';
+import { ProgressBarModule } from '@vex/components/progress-bar/progress-bar.module';
+import { SearchModule } from '@vex/components/search/search.module';
 
 @NgModule({
   declarations: [

@@ -2,7 +2,9 @@ import { Component, Input, OnInit } from '@angular/core';
 import icMoreHoriz from '@iconify/icons-ic/twotone-more-horiz';
 import icCloudDownload from '@iconify/icons-ic/twotone-cloud-download';
 
-import { ApexOptions, createDateArray, defaultChartOptions } from '@vex';
+import { ApexOptions } from '@vex/components/chart/chart.component';
+import { defaultChartOptions } from '@vex/utils/default-chart-options';
+import { createDateArray } from '@vex/utils/create-date-array';
 
 @Component({
   selector: 'vex-widget-large-chart',

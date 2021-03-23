@@ -2,7 +2,8 @@ import { ElementRef, Injectable, Injector } from '@angular/core';
 import { ConnectionPositionPair, Overlay, OverlayConfig, PositionStrategy } from '@angular/cdk/overlay';
 import { ComponentPortal, PortalInjector } from '@angular/cdk/portal';
 
-import { PopoverComponent, PopoverContent, PopoverRef } from '@vex';
+import { PopoverContent, PopoverRef } from './popover-ref';
+import { PopoverComponent } from '@vex/components/popover/popover.component';
 
 export interface PopoverParams<T> {
   width?: string | number;

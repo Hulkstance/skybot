@@ -6,7 +6,9 @@ import { RouterModule } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
-import { BreadcrumbsModule, ContainerModule, SecondaryToolbarComponent } from '@vex';
+import { BreadcrumbsModule } from '@vex/components/breadcrumbs/breadcrumbs.module';
+import { SecondaryToolbarComponent } from '@vex/components/secondary-toolbar/secondary-toolbar.component';
+import { ContainerModule } from '@vex/directives/container/container.module';
 
 @NgModule({
   declarations: [SecondaryToolbarComponent],

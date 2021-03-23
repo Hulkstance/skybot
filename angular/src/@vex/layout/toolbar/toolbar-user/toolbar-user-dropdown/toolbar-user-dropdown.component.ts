@@ -17,9 +17,9 @@ import icLock from '@iconify/icons-ic/twotone-lock';
 import icNotificationsOff from '@iconify/icons-ic/twotone-notifications-off';
 import { Icon } from '@visurel/iconify-angular';
 
-import { MenuItem } from '../interfaces/menu-item.interface';
-import { trackById } from '../../../../utils/track-by';
-import { PopoverRef } from '../../../../components/popover/popover-ref';
+import { PopoverRef } from '@vex/components/popover/popover-ref';
+import { trackById } from '@vex/utils/track-by';
+import { MenuItem } from '@vex/layout/toolbar/toolbar-user/interfaces/menu-item.interface';
 
 export interface OnlineStatus {
   id: 'online' | 'away' | 'dnd' | 'offline';

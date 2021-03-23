@@ -5,7 +5,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { IconModule } from '@visurel/iconify-angular';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { ChartModule, WidgetLargeChartComponent } from '@vex';
+import { WidgetLargeChartComponent } from '@vex/components/widgets/widget-large-chart/widget-large-chart.component';
+import { ChartModule } from '@vex/components/chart/chart.module';
 
 @NgModule({
   declarations: [WidgetLargeChartComponent],

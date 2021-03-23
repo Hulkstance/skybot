@@ -7,8 +7,8 @@ import { DOCUMENT } from '@angular/common';
 import { filter, map, startWith, withLatestFrom } from 'rxjs/operators';
 
 import { LayoutService } from '../services/layout.service';
-import { checkRouterChildData } from '../utils/check-router-child-data';
 import { ConfigService } from '../services/config.service';
+import { checkRouterChildData } from '@vex/utils/check-router-child-data';
 
 @UntilDestroy()
 @Component({

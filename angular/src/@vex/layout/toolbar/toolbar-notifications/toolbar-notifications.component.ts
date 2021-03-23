@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import icNotificationsActive from '@iconify/icons-ic/twotone-notifications-active';
 
-import { PopoverService } from '../../../components/popover/popover.service';
-import { ToolbarNotificationsDropdownComponent } from './toolbar-notifications-dropdown/toolbar-notifications-dropdown.component';
+import { PopoverService } from '@vex/components/popover/popover.service';
+import { ToolbarNotificationsDropdownComponent } from '@vex/layout/toolbar/toolbar-notifications/toolbar-notifications-dropdown/toolbar-notifications-dropdown.component';
 
 @Component({
   selector: 'vex-toolbar-notifications',

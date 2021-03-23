@@ -6,7 +6,8 @@ import icTrendingUp from '@iconify/icons-ic/twotone-trending-up';
 import icTrendingDown from '@iconify/icons-ic/twotone-trending-down';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 
-import { scaleInOutAnimation, ShareBottomSheetComponent } from '@vex';
+import { scaleInOutAnimation } from '@vex/animations/scale-in-out.animation';
+import { ShareBottomSheetComponent } from '@vex/components/share-bottom-sheet/share-bottom-sheet.component';
 
 @Component({
   selector: 'vex-widget-quick-value-start',

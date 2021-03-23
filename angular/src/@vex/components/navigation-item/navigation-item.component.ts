@@ -2,7 +2,9 @@ import { Component, Input, OnInit } from '@angular/core';
 import { filter, map, startWith } from 'rxjs/operators';
 import { NavigationEnd, Router } from '@angular/router';
 
-import { NavigationItem, NavigationLink, NavigationService, trackByRoute } from '@vex';
+import { NavigationItem, NavigationLink } from '@vex/interfaces/navigation-item.interface';
+import { NavigationService } from '@vex/services/navigation.service';
+import { trackByRoute } from '@vex/utils/track-by';
 
 @Component({
   selector: 'vex-navigation-item',

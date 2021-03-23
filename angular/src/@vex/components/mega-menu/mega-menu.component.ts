@@ -7,7 +7,7 @@ import icContacts from '@iconify/icons-ic/twotone-contacts';
 import icAssessment from '@iconify/icons-ic/twotone-assessment';
 import icBook from '@iconify/icons-ic/twotone-book';
 
-import { PopoverRef } from '@vex';
+import { PopoverRef } from '@vex/components/popover/popover-ref';
 
 export interface MegaMenuFeature {
   icon: Icon;

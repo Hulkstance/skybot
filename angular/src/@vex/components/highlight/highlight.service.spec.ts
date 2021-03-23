@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { HighlightService } from '@vex';
+import { HighlightService } from './highlight.service';
 
 describe('HighlightService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
