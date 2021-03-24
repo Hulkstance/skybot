@@ -40,6 +40,7 @@ export class HighlightDirective implements OnChanges {
 
   /**
    * Highlighting with language detection and fix markup.
+   *
    * @param code Accepts a string with the code to highlight
    * @param languages An optional array of language names and aliases restricting detection to only those languages.
    * The subset can also be set with configure, but the local parameter overrides the option if set.

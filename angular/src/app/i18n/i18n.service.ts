@@ -29,6 +29,7 @@ export class I18nService {
 
   /**
    * Gets the current language.
+   *
    * @return The current language code.
    */
   get language(): string {
@@ -39,6 +40,7 @@ export class I18nService {
    * Sets the current language.
    * Note: The current language is saved to the local storage.
    * If no parameter is specified, the language is loaded from local storage (if present).
+   *
    * @param language The IETF language code to set.
    */
   set language(language: string) {
@@ -64,6 +66,7 @@ export class I18nService {
   /**
    * Initializes i18n for the application.
    * Loads language from local storage if present, or sets default language.
+   *
    * @param defaultLanguage The default language to use.
    * @param supportedLanguages The list of supported languages.
    */
