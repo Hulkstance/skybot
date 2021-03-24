@@ -3,7 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
-import { I18nModule } from './i18n';
+import { I18nModule } from './i18n/i18n.module';
 import { VexModule } from '@vex/vex.module';
 import { AppComponent } from './app.component';
 import { CustomLayoutModule } from './custom-layout/custom-layout.module';
