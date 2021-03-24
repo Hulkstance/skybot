@@ -1,5 +1,8 @@
 # Skybot
 
+[![Angular status](https://github.com/Hulkstance/skybot/actions/workflows/angular.yml/badge.svg)](https://github.com/Hulkstance/skybot/actions/)
+[![GitHub license](https://img.shields.io/badge/license-GNU-blue.svg)](https://github.com/Hulkstance/skybot/blob/main/LICENSE)
+
 ## TradingView advantages
 
 - Tick data
