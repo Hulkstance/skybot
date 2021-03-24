@@ -7,7 +7,7 @@ on:
 jobs:
   build:
 
-    name: Building and testing on ${{ matrix.os }}
+    name: Building on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     env:
       CI: true
@@ -36,4 +36,3 @@ jobs:
         if: matrix.os == 'windows-latest'
       
       - run: npm run build --if-present
-      - run: npm run test:lint
