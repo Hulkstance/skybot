@@ -25,7 +25,30 @@ export class ConfigService {
 
   constructor(@Inject(DOCUMENT) private document: Document,
               private layoutService: LayoutService) {
-    this.config$.subscribe(config => this._updateConfig(config));
+    this.config$.subscribe(config => {
+      const body = this.document.body;
+
+      this.configs.forEach(c => {
+        if (body.classList.contains(c.id)) {
+          body.classList.remove(c.id);
+        }
+      });
+
+      body.classList.add(config.id);
+
+      config.sidenav.state === 'expanded' ? this.layoutService.expandSidenav() : this.layoutService.collapseSidenav();
+
+      this.document.body.dir = config.rtl ? 'rtl' : 'ltr';
+
+      // Workaround so charts and other externals know they have to resize on Layout switch
+      if (window) {
+        window.dispatchEvent(new Event('resize'));
+
+        setTimeout(() => {
+          window.dispatchEvent(new Event('resize'));
+        }, 200);
+      }
+    });
   }
 
   setConfig(config: ConfigName) {
@@ -38,31 +61,6 @@ export class ConfigService {
 
   updateConfig(config: DeepPartial<Config>) {
     this.configSubject.next(mergeDeep({ ...this.configSubject.getValue() }, config));
-  }
-
-  private _updateConfig(config: Config) {
-    const body = this.document.body;
-
-    this.configs.forEach(c => {
-      if (body.classList.contains(c.id)) {
-        body.classList.remove(c.id);
-      }
-    });
-
-    body.classList.add(config.id);
-
-    config.sidenav.state === 'expanded' ? this.layoutService.expandSidenav() : this.layoutService.collapseSidenav();
-
-    this.document.body.dir = config.rtl ? 'rtl' : 'ltr';
-
-    // Workaround so charts and other externals know they have to resize on Layout switch
-    if (window) {
-      window.dispatchEvent(new Event('resize'));
-
-      setTimeout(() => {
-        window.dispatchEvent(new Event('resize'));
-      }, 200);
-    }
   }
 
 }

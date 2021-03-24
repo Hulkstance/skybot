@@ -17,15 +17,15 @@ export class PopoverRef<T = any> {
               public content: PopoverContent,
               public data: T) {
     overlay.backdropClick().subscribe(() => {
-      this._close('backdropClick', null);
+      this.close('backdropClick', null);
     });
   }
 
-  close(data?: T) {
-    this._close('close', data);
+  setClose(data?: T) {
+    this.close('close', data);
   }
 
-  private _close(type: PopoverCloseEvent['type'], data?: T) {
+  private close(type: PopoverCloseEvent['type'], data?: T) {
     this.overlay.dispose();
     this.afterClosed.next({
       type,

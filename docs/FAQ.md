@@ -15,6 +15,7 @@ npx ng lint vex
 ```
 
 - [Reference](https://github.com/angular-eslint/angular-eslint#quick-start-with-angular-and-eslint)
+- [Configuring ESLint](https://eslint.org/docs/user-guide/configuring/)
 
 ## Wonder about the coding patterns in .NET?
 

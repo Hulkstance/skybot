@@ -7,13 +7,13 @@
   <div class="section">
     <h5 class="subheading">THEME BASE</h5>
 
-    <div (click)="selectedStyle === Style.dark ? disableDarkMode() : enableDarkMode()"
+    <div (click)="selectedStyle === style.dark ? disableDarkMode() : enableDarkMode()"
          *ngIf="selectedStyle$ | async as selectedStyle"
          class="rounded-full mt-2 flex items-center cursor-pointer relative bg-contrast-black text-contrast-white"
          matRipple>
       <div class="m-2 h-6 w-6 rounded-full">
-        <ic-icon *ngIf="selectedStyle === Style.dark" [icon]="icCheck" size="24px"></ic-icon>
-        <ic-icon *ngIf="selectedStyle !== Style.dark" [icon]="icClose" size="24px"></ic-icon>
+        <ic-icon *ngIf="selectedStyle === style.dark" [icon]="icCheck" size="24px"></ic-icon>
+        <ic-icon *ngIf="selectedStyle !== style.dark" [icon]="icClose" size="24px"></ic-icon>
       </div>
       <p class="ml-1 font-medium text-sm">DARK MODE</p>
     </div>
@@ -45,19 +45,19 @@
       <div class="layout-image rounded overflow-hidden relative hover:bg-hover shadow-8">
         <img [src]="config.imgSrc" class="w-full block">
         <div class="layout-image-overlay" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="4px">
-          <button (click)="setConfig(config.id, Style.light)"
+          <button (click)="setConfig(config.id, style.light)"
                   class="bg-contrast-white text-contrast-black"
                   fxFlex="none"
                   mat-raised-button
                   type="button">LIGHT
           </button>
-          <button (click)="setConfig(config.id, Style.default)"
+          <button (click)="setConfig(config.id, style.default)"
                   color="primary"
                   fxFlex="none"
                   mat-raised-button
                   type="button">DEFAULT
           </button>
-          <button (click)="setConfig(config.id, Style.dark)"
+          <button (click)="setConfig(config.id, style.dark)"
                   class="bg-contrast-black text-contrast-white"
                   fxFlex="none"
                   mat-raised-button

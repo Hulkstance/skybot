@@ -74,6 +74,10 @@ export class ChartComponent implements OnInit, OnChanges {
     });
   }
 
+  public render(): Promise<void> {
+    return this.chart.render();
+  }
+
   private createElement() {
     if (this.series) {
       this.options.series = this.series;
@@ -89,12 +93,8 @@ export class ChartComponent implements OnInit, OnChanges {
         this.options
       );
 
-      this.render();
+      this.render().then(r => r);
     });
-  }
-
-  public render(): Promise<void> {
-    return this.chart.render();
   }
 
 }

@@ -1,4 +1,4 @@
-import { Component, Inject, Input, OnDestroy } from '@angular/core';
+import { Component, Inject, Input } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 
 @Component({
@@ -9,22 +9,21 @@ import { DOCUMENT } from '@angular/common';
     class: 'vex-sidebar'
   }
 })
-export class SidebarComponent implements OnDestroy {
+export class SidebarComponent {
 
   @Input() position: 'left' | 'right' = 'left';
   @Input() invisibleBackdrop: boolean;
+  private isOpened: boolean;
 
   constructor(@Inject(DOCUMENT) private document: Document) {
   }
 
-  private _opened: boolean;
-
   get opened() {
-    return this._opened;
+    return this.isOpened;
   }
 
   @Input() set opened(opened: boolean) {
-    this._opened = opened;
+    this.isOpened = opened;
     opened ? this.enableScrollblock() : this.disableScrollblock();
   }
 
@@ -56,6 +55,4 @@ export class SidebarComponent implements OnDestroy {
     this.opened = false;
   }
 
-  ngOnDestroy(): void {
-  }
 }

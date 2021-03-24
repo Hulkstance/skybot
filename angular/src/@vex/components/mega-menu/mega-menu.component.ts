@@ -109,6 +109,6 @@ export class MegaMenuComponent implements OnInit {
   }
 
   close() {
-    this.popoverRef.close();
+    this.popoverRef.setClose();
   }
 }

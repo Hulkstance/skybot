@@ -16,13 +16,13 @@ export class ScrollbarComponent implements AfterContentInit, OnDestroy {
 
   scrollbarRef: SimpleBar;
 
-  constructor(private _element: ElementRef,
+  constructor(private element: ElementRef,
               private zone: NgZone) {
   }
 
   ngAfterContentInit() {
     this.zone.runOutsideAngular(() => {
-      this.scrollbarRef = new SimpleBar(this._element.nativeElement, this.options);
+      this.scrollbarRef = new SimpleBar(this.element.nativeElement, this.options);
     });
   }
 

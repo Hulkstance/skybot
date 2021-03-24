@@ -26,7 +26,7 @@ export class PopoverComponent implements OnInit {
     if (this.content instanceof TemplateRef) {
       this.renderMethod = 'template';
       this.context = {
-        close: this.popoverRef.close.bind(this.popoverRef)
+        close: this.popoverRef.setClose.bind(this.popoverRef)
       };
     }
 

@@ -40,8 +40,8 @@ export class ConfigPanelComponent implements OnInit {
   icSettings = icSettings;
   icCheck = icCheck;
   icClose = icClose;
-  ConfigName = ConfigName;
-  Style = Style;
+  configName = ConfigName;
+  style = Style;
   selectedColor = colorVariables.blue;
 
   constructor(private configService: ConfigService,

@@ -12,9 +12,6 @@ import { HighlightService } from './highlight.service';
 })
 export class HighlightDirective implements OnChanges {
 
-  /** Highlighted Code */
-  highlightedCode: string;
-
   /** An optional array of language names and aliases restricting detection to only those languages.
    * The subset can also be set with configure, but the local parameter overrides the option if set.
    */
@@ -26,7 +23,10 @@ export class HighlightDirective implements OnChanges {
   /** Stream that emits when code string is highlighted */
   @Output() highlighted = new EventEmitter<HighlightResult>();
 
-  constructor(private _highlightService: HighlightService, private _zone: NgZone) {
+  /** Highlighted Code */
+  highlightedCode: string;
+
+  constructor(private highlightService: HighlightService, private zone: NgZone) {
   }
 
   ngOnChanges(changes: SimpleChanges) {
@@ -46,8 +46,8 @@ export class HighlightDirective implements OnChanges {
    * The subset can also be set with configure, but the local parameter overrides the option if set.
    */
   highlightElement(code: string, languages?: string[]) {
-    this._zone.runOutsideAngular(() => {
-      const res = this._highlightService.highlightAuto(code, languages);
+    this.zone.runOutsideAngular(() => {
+      const res = this.highlightService.highlightAuto(code, languages);
       this.highlightedCode = res.value;
       this.highlighted.emit(res);
     });

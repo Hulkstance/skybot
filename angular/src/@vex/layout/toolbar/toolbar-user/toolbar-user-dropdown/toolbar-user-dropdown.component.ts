@@ -123,7 +123,7 @@ export class ToolbarUserDropdownComponent implements OnInit {
   }
 
   close() {
-    this.popoverRef.close();
+    this.popoverRef.setClose();
   }
 
 }

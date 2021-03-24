@@ -50,7 +50,10 @@
         ],
         "id-blacklist": "error",
         "import/order": "off",
-        "max-len": "off"
+        "max-len": "off",
+        "no-console": "off",
+        "@typescript-eslint/no-unused-expressions": "off",
+        "@typescript-eslint/member-ordering": "off"
       }
     },
     {
@@ -60,7 +63,9 @@
       "extends": [
         "plugin:@angular-eslint/template/recommended"
       ],
-      "rules": {}
+      "rules": {
+        "@angular-eslint/template/no-negated-async": "off"
+      }
     }
   ]
 }

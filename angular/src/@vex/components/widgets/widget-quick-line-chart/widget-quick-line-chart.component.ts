@@ -32,14 +32,14 @@ export class WidgetQuickLineChartComponent implements OnInit {
 
   icShare = icShare;
 
-  constructor(private _bottomSheet: MatBottomSheet) {
+  constructor(private bottomSheet: MatBottomSheet) {
   }
 
   ngOnInit() {
   }
 
   openSheet() {
-    this._bottomSheet.open(ShareBottomSheetComponent);
+    this.bottomSheet.open(ShareBottomSheetComponent);
   }
 }
 

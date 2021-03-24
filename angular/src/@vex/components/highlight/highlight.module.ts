@@ -16,13 +16,11 @@ import * as typescript from 'highlight.js/lib/languages/typescript';
  * Import every language you wish to highlight here
  * NOTE: The name of each language must match the file name its imported from
  */
-export function hljsLanguages() {
-  return [
-    { name: 'typescript', func: typescript as any },
-    { name: 'scss', func: scss as any },
-    { name: 'xml', func: xml as any }
-  ];
-}
+export const hljsLanguages = () => [
+  { name: 'typescript', func: typescript as any },
+  { name: 'scss', func: scss as any },
+  { name: 'xml', func: xml as any }
+];
 
 @NgModule({
   providers: [

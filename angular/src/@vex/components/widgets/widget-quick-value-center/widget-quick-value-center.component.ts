@@ -31,13 +31,13 @@ export class WidgetQuickValueCenterComponent implements OnInit {
 
   showButton: boolean;
 
-  constructor(private _bottomSheet: MatBottomSheet) {
+  constructor(private bottomSheet: MatBottomSheet) {
   }
 
   ngOnInit() {
   }
 
   openSheet() {
-    this._bottomSheet.open(ShareBottomSheetComponent);
+    this.bottomSheet.open(ShareBottomSheetComponent);
   }
 }
