@@ -56,7 +56,7 @@ export class AppComponent {
     this.configService.updateConfig({
       sidenav: {
         title: 'Skybot',
-        imageUrl: '//placehold.it/100x100',
+        imageUrl: 'assets/img/demo/logo.svg',
         showCollapsePin: true,
         state: 'collapsed'
       },
