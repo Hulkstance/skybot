@@ -1,4 +1,4 @@
-# Boyko Borissov Bot
+# Skybot
 
 ## TradingView advantages
 
