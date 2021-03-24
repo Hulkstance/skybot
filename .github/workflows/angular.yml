@@ -1,4 +1,4 @@
-name: angular
+name: angular CI
 
 on: pull_request
 
