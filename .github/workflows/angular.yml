@@ -1,6 +1,6 @@
 name: angular
 
-on: pull_request
+on: push
 
 jobs:
 
