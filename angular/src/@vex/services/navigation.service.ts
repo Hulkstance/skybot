@@ -10,14 +10,14 @@ export class NavigationService {
 
   items: NavigationItem[] = [];
 
-  private _openChangeSubject = new Subject<NavigationDropdown>();
-  openChange$ = this._openChangeSubject.asObservable();
+  private openChangeSubject = new Subject<NavigationDropdown>();
+  openChange$ = this.openChangeSubject.asObservable();
 
   constructor() {
   }
 
   triggerOpenChange(item: NavigationDropdown) {
-    this._openChangeSubject.next(item);
+    this.openChangeSubject.next(item);
   }
 
   isLink(item: NavigationItem): item is NavigationLink {

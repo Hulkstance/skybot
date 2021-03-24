@@ -27,18 +27,18 @@ export class LayoutService {
   isMobile$ = this.breakpointObserver.observe(`(max-width: 599px)`).pipe(
     map(state => state.matches)
   );
-  private _quickPanelOpenSubject = new BehaviorSubject<boolean>(false);
-  quickPanelOpen$ = this._quickPanelOpenSubject.asObservable();
-  private _sidenavOpenSubject = new BehaviorSubject<boolean>(false);
-  sidenavOpen$ = this._sidenavOpenSubject.asObservable();
-  private _sidenavCollapsedSubject = new BehaviorSubject<boolean>(false);
-  sidenavCollapsed$ = this._sidenavCollapsedSubject.asObservable();
-  private _sidenavCollapsedOpenSubject = new BehaviorSubject<boolean>(false);
-  sidenavCollapsedOpen$ = this._sidenavCollapsedOpenSubject.asObservable();
-  private _configPanelOpenSubject = new BehaviorSubject<boolean>(false);
-  configPanelOpen$ = this._configPanelOpenSubject.asObservable();
-  private _searchOpen = new BehaviorSubject<boolean>(false);
-  searchOpen$ = this._searchOpen.asObservable();
+  private quickPanelOpenSubject = new BehaviorSubject<boolean>(false);
+  quickPanelOpen$ = this.quickPanelOpenSubject.asObservable();
+  private sidenavOpenSubject = new BehaviorSubject<boolean>(false);
+  sidenavOpen$ = this.sidenavOpenSubject.asObservable();
+  private sidenavCollapsedSubject = new BehaviorSubject<boolean>(false);
+  sidenavCollapsed$ = this.sidenavCollapsedSubject.asObservable();
+  private sidenavCollapsedOpenSubject = new BehaviorSubject<boolean>(false);
+  sidenavCollapsedOpen$ = this.sidenavCollapsedOpenSubject.asObservable();
+  private configPanelOpenSubject = new BehaviorSubject<boolean>(false);
+  configPanelOpen$ = this.configPanelOpenSubject.asObservable();
+  private searchOpen = new BehaviorSubject<boolean>(false);
+  searchOpen$ = this.searchOpen.asObservable();
 
   constructor(private router: Router,
               private breakpointObserver: BreakpointObserver) {
@@ -49,51 +49,51 @@ export class LayoutService {
   isMobile = () => this.breakpointObserver.isMatched(`(max-width: 599px)`);
 
   openQuickPanel() {
-    this._quickPanelOpenSubject.next(true);
+    this.quickPanelOpenSubject.next(true);
   }
 
   closeQuickPanel() {
-    this._quickPanelOpenSubject.next(false);
+    this.quickPanelOpenSubject.next(false);
   }
 
   openSidenav() {
-    this._sidenavOpenSubject.next(true);
+    this.sidenavOpenSubject.next(true);
   }
 
   closeSidenav() {
-    this._sidenavOpenSubject.next(false);
+    this.sidenavOpenSubject.next(false);
   }
 
   collapseSidenav() {
-    this._sidenavCollapsedSubject.next(true);
+    this.sidenavCollapsedSubject.next(true);
   }
 
   expandSidenav() {
-    this._sidenavCollapsedSubject.next(false);
+    this.sidenavCollapsedSubject.next(false);
   }
 
   collapseOpenSidenav() {
-    this._sidenavCollapsedOpenSubject.next(true);
+    this.sidenavCollapsedOpenSubject.next(true);
   }
 
   collapseCloseSidenav() {
-    this._sidenavCollapsedOpenSubject.next(false);
+    this.sidenavCollapsedOpenSubject.next(false);
   }
 
   openConfigPanel() {
-    this._configPanelOpenSubject.next(true);
+    this.configPanelOpenSubject.next(true);
   }
 
   closeConfigPanel() {
-    this._configPanelOpenSubject.next(false);
+    this.configPanelOpenSubject.next(false);
   }
 
   openSearch() {
-    this._searchOpen.next(true);
+    this.searchOpen.next(true);
   }
 
   closeSearch() {
-    this._searchOpen.next(false);
+    this.searchOpen.next(false);
   }
 
   enableRTL() {

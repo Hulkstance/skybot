@@ -59,7 +59,7 @@ export class ChartComponent implements OnInit, OnChanges {
 
   ngOnInit() {
     asapScheduler.schedule(() => {
-      this._createElement();
+      this.createElement();
     });
   }
 
@@ -70,15 +70,11 @@ export class ChartComponent implements OnInit, OnChanges {
         return;
       }
 
-      this._createElement();
+      this.createElement();
     });
   }
 
-  public render(): Promise<void> {
-    return this.chart.render();
-  }
-
-  private _createElement() {
+  private createElement() {
     if (this.series) {
       this.options.series = this.series;
     }
@@ -95,6 +91,10 @@ export class ChartComponent implements OnInit, OnChanges {
 
       this.render();
     });
+  }
+
+  public render(): Promise<void> {
+    return this.chart.render();
   }
 
 }

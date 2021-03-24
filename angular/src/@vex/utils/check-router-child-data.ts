@@ -2,7 +2,7 @@ import { ActivatedRouteSnapshot } from '@angular/router';
 
 import { VexRouteData } from '@vex/interfaces/vex-route.interface';
 
-export function checkRouterChildData(route: ActivatedRouteSnapshot & { data?: VexRouteData }, compareWith: (data: VexRouteData) => boolean) {
+export const checkRouterChildData = (route: ActivatedRouteSnapshot & { data?: VexRouteData }, compareWith: (data: VexRouteData) => boolean) => {
   if (compareWith(route.data)) {
     return true;
   }
@@ -12,12 +12,12 @@ export function checkRouterChildData(route: ActivatedRouteSnapshot & { data?: Ve
   }
 
   return checkRouterChildData(route.firstChild, compareWith);
-}
+};
 
 /**
  * Used to get params from children in their parent
  */
-export function getAllParams(route: ActivatedRouteSnapshot & { data?: VexRouteData }, result = new Map<string, string>()): Map<string, string> {
+export const getAllParams = (route: ActivatedRouteSnapshot & { data?: VexRouteData }, result = new Map<string, string>()): Map<string, string> => {
   if (route.params) {
     for (const key of Object.keys(route.params)) {
       result.set(key, route.params[key]);
@@ -29,4 +29,4 @@ export function getAllParams(route: ActivatedRouteSnapshot & { data?: VexRouteDa
   }
 
   return getAllParams(route.firstChild, result);
-}
+};

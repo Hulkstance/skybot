@@ -4,7 +4,7 @@
  *
  * @author inspired by [jhildenbiddle](https://stackoverflow.com/a/48218209).
  */
-export function mergeDeep(target, source) {
+export const mergeDeep = (target, source) => {
   const isObject = (obj) => obj && typeof obj === 'object';
 
   if (!isObject(target) || !isObject(source)) {
@@ -25,4 +25,4 @@ export function mergeDeep(target, source) {
   });
 
   return target;
-}
+};

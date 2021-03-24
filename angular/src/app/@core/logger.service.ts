@@ -35,11 +35,11 @@
  * LogLevel.Off is never emitted and only used with Logger.level property to disable logs.
  */
 export enum LogLevel {
-  Off = 0,
-  Error,
-  Warning,
-  Info,
-  Debug
+  off = 0,
+  error,
+  warning,
+  info,
+  debug
 }
 
 /**
@@ -53,7 +53,7 @@ export class Logger {
    * Current logging level.
    * Set it to LogLevel.Off to disable logs completely.
    */
-  static level = LogLevel.Debug;
+  static level = LogLevel.debug;
 
   /**
    * Additional log outputs.
@@ -68,7 +68,7 @@ export class Logger {
    * Sets logging level to LogLevel.Warning.
    */
   static enableProductionMode() {
-    Logger.level = LogLevel.Warning;
+    Logger.level = LogLevel.warning;
   }
 
   /**
@@ -76,7 +76,7 @@ export class Logger {
    * Works the same as console.log().
    */
   debug(...objects: any[]) {
-    this.log(console.log, LogLevel.Debug, objects);
+    this.log(console.log, LogLevel.debug, objects);
   }
 
   /**
@@ -84,7 +84,7 @@ export class Logger {
    * Works the same as console.log().
    */
   info(...objects: any[]) {
-    this.log(console.info, LogLevel.Info, objects);
+    this.log(console.info, LogLevel.info, objects);
   }
 
   /**
@@ -92,7 +92,7 @@ export class Logger {
    * Works the same as console.log().
    */
   warn(...objects: any[]) {
-    this.log(console.warn, LogLevel.Warning, objects);
+    this.log(console.warn, LogLevel.warning, objects);
   }
 
   /**
@@ -100,7 +100,7 @@ export class Logger {
    * Works the same as console.log().
    */
   error(...objects: any[]) {
-    this.log(console.error, LogLevel.Error, objects);
+    this.log(console.error, LogLevel.error, objects);
   }
 
   private log(func: (...args: any[]) => void, level: LogLevel, objects: any[]) {

@@ -17,18 +17,18 @@ export class StyleService {
 
   defaultStyle = Style.default;
 
-  private _styleSubject = new BehaviorSubject<Style>(this.defaultStyle);
-  style$ = this._styleSubject.asObservable();
+  private styleSubject = new BehaviorSubject<Style>(this.defaultStyle);
+  style$ = this.styleSubject.asObservable();
 
   constructor(@Inject(DOCUMENT) private document: Document) {
-    this.style$.pipe(untilDestroyed(this)).subscribe(style => this._updateStyle(style));
+    this.style$.pipe(untilDestroyed(this)).subscribe(style => this.updateStyle(style));
   }
 
   setStyle(style: Style) {
-    this._styleSubject.next(style);
+    this.styleSubject.next(style);
   }
 
-  private _updateStyle(style: Style) {
+  private updateStyle(style: Style) {
     const body = this.document.body;
 
     Object.values(Style).filter(s => s !== style).forEach(value => {

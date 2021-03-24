@@ -17,6 +17,8 @@ import { ConfigService } from '@vex/services/config.service';
 })
 export class CustomLayoutComponent implements OnInit {
 
+  @ViewChild('configPanel', { static: true }) configPanel: SidebarComponent;
+
   sidenavCollapsed$ = this.layoutService.sidenavCollapsed$;
   isFooterVisible$ = this.configService.config$.pipe(map(config => config.footer.visible));
   isDesktop$ = this.layoutService.isDesktop$;
@@ -26,8 +28,6 @@ export class CustomLayoutComponent implements OnInit {
     startWith(null),
     map(() => checkRouterChildData(this.router.routerState.root.snapshot, data => data.toolbarShadowEnabled))
   );
-
-  @ViewChild('configPanel', { static: true }) configPanel: SidebarComponent;
 
   constructor(
     private layoutService: LayoutService,
