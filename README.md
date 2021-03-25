@@ -39,3 +39,4 @@
 
 - [Angular Awesome](https://github.com/akhilben/angular-awesome/tree/823bd76a66888b1e7e40f883f54a6a7302371202#-table-of-contents)
 - [until-destroy](https://github.com/ngneat/until-destroy)
+- [Migrating an Angular CLI project to ESLint](https://github.com/angular-eslint/angular-eslint#migrating-an-angular-cli-project-from-codelyzer-and-tslint)
