@@ -20,7 +20,9 @@
 
 - Adapter
 - Builder
-- Guard Clause - [Ardalis.GuardClauses](https://github.com/ardalis/GuardClauses) NuGet package
+- Guard Clause
+  - NuGet package: [Ardalis.GuardClauses](https://github.com/ardalis/GuardClauses)
+  - Information: [DevIQ](https://deviq.com/design-patterns/null-object-pattern)
 - Observer
 - Publisher-Subscriber
 - Object Pool
