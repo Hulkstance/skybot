@@ -18,7 +18,9 @@
 
 ## Design patterns
 
+- Adapter
 - Builder
+- Guard Clause - [Ardalis.GuardClauses](https://github.com/ardalis/GuardClauses) NuGet package
 - Observer
 - Publisher-Subscriber
 - Object Pool
