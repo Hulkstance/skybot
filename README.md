@@ -27,6 +27,8 @@
 - Null Object
 - Repository
 - Specification
+- Singleton
+- State
 - Observer
 - Publisher-Subscriber
 - Object Pool
