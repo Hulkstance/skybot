@@ -32,6 +32,9 @@
   - Monolith
   - Modular Monolith
 
+### References:
+- [Monolith vs Modular Monolith vs Microservices](https://www.jrebel.com/blog/what-is-a-modular-monolith)
+
 ## Angular best practices
 
 - [Angular Awesome](https://github.com/akhilben/angular-awesome/tree/823bd76a66888b1e7e40f883f54a6a7302371202#-table-of-contents)
