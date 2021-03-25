@@ -15,6 +15,7 @@
 - SOLID
 - DRY
 - KISS
+- YAGNI
 
 ## Design patterns
 
@@ -23,6 +24,7 @@
 - Guard Clause
   - NuGet package: [Ardalis.GuardClauses](https://github.com/ardalis/GuardClauses)
   - Information: [DevIQ](https://deviq.com/design-patterns/null-object-pattern)
+- Null Object
 - Observer
 - Publisher-Subscriber
 - Object Pool
