@@ -24,6 +24,10 @@
 - Object Pool
 - Strategy
 
+### References:
+- [Design patterns given by Jason Taylor](https://deviq.com/design-patterns/repository-pattern)
+- [Refactoring.Guru](https://refactoring.guru/design-patterns)
+
 ## Clean Architectures
 
 - [Clean Architecture by Jason Taylor](https://github.com/jasontaylordev/CleanArchitecture/tree/d0f133ee026aec5cd5856c5592c307b5f20fa8e4)
