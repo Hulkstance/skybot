@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Skybot.Domain.ValueObjects;
+using Skybot.Domain.Common;
 using Xunit;
 
 namespace Skybot.Domain.UnitTests.ValueObjects

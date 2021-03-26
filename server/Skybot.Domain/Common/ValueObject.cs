@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Skybot.Domain.ValueObjects
+namespace Skybot.Domain.Common
 {
     public abstract class ValueObject
     {
