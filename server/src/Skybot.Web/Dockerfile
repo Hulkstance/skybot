@@ -2,15 +2,15 @@
 
 FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
 WORKDIR /app
-EXPOSE 80
-EXPOSE 443
+EXPOSE 5000
+EXPOSE 5001
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["Skybot.Web/Skybot.Web.csproj", "Skybot.Web/"]
-RUN dotnet restore "Skybot.Web/Skybot.Web.csproj"
+COPY ["src/Skybot.Web/Skybot.Web.csproj", "src/Skybot.Web/"]
+RUN dotnet restore "src/Skybot.Web/Skybot.Web.csproj"
 COPY . .
-WORKDIR "/src/Skybot.Web"
+WORKDIR "/src/src/Skybot.Web"
 RUN dotnet build "Skybot.Web.csproj" -c Release -o /app/build
 
 FROM build AS publish

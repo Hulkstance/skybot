@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>504d6680-aefe-4671-aeda-a16ea9b4506b</ProjectGuid>
+    <ProjectGuid>3ecef512-8c39-4894-b3ad-e6ab73b911f3</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
     <DockerServiceName>skybot.web</DockerServiceName>

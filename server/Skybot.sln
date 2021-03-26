@@ -7,8 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E05DB4C7-9C3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{238B2725-1665-40FB-A620-04AD04637158}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{504D6680-AEFE-4671-AEDA-A16EA9B4506B}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Skybot.Application", "src\Skybot.Application\Skybot.Application.csproj", "{C3010529-FA0F-47D5-A658-ED2403DBA09E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Skybot.Domain", "src\Skybot.Domain\Skybot.Domain.csproj", "{EF2911D4-5A1F-473A-8BF1-68C2B0A61B01}"
@@ -21,16 +19,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Skybot.Web", "src\Skybot.We
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Skybot.Domain.UnitTests", "tests\Skybot.Domain.UnitTests\Skybot.Domain.UnitTests.csproj", "{FCA473BD-35F6-4D70-BF81-C2E34E2275CE}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{3ECEF512-8C39-4894-B3AD-E6AB73B911F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{504D6680-AEFE-4671-AEDA-A16EA9B4506B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{504D6680-AEFE-4671-AEDA-A16EA9B4506B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{504D6680-AEFE-4671-AEDA-A16EA9B4506B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{504D6680-AEFE-4671-AEDA-A16EA9B4506B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C3010529-FA0F-47D5-A658-ED2403DBA09E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C3010529-FA0F-47D5-A658-ED2403DBA09E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3010529-FA0F-47D5-A658-ED2403DBA09E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -55,6 +51,10 @@ Global
 		{FCA473BD-35F6-4D70-BF81-C2E34E2275CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCA473BD-35F6-4D70-BF81-C2E34E2275CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCA473BD-35F6-4D70-BF81-C2E34E2275CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ECEF512-8C39-4894-B3AD-E6AB73B911F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ECEF512-8C39-4894-B3AD-E6AB73B911F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ECEF512-8C39-4894-B3AD-E6AB73B911F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ECEF512-8C39-4894-B3AD-E6AB73B911F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
