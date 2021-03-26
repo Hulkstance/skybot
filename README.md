@@ -15,16 +15,48 @@
 - SOLID
 - DRY
 - KISS
+- YAGNI
 
 ## Design patterns
 
+- Adapter
 - Builder
+- Guard Clause
+  - NuGet package: [Ardalis.GuardClauses](https://github.com/ardalis/GuardClauses)
+  - Information: [DevIQ](https://deviq.com/design-patterns/null-object-pattern)
+- Null Object
+- Repository
+- Specification
+- Singleton
+- State
 - Observer
 - Publisher-Subscriber
 - Object Pool
 - Strategy
 
+### References:
+- [Design patterns given by Jason Taylor](https://deviq.com/design-patterns/repository-pattern)
+- [Refactoring.Guru](https://refactoring.guru/design-patterns)
+
+## Architecture
+- Domain-driven design
+- Behavior-driven development
+- Test-driven development
+- Pain-driven development
+
+## Clean Architectures
+
+- [Clean Architecture by Jason Taylor](https://github.com/jasontaylordev/CleanArchitecture/tree/d0f133ee026aec5cd5856c5592c307b5f20fa8e4)
+- [Clean Architecture by Phong Nguyen](https://github.com/phongnguyend/Practical.CleanArchitecture/tree/66699d05e66b7f7e06704f528c7677bd5db1f5fa)
+  - Microservices
+  - Monolith
+  - Modular Monolith
+
+### References:
+- [Monolith vs Modular Monolith vs Microservices](https://www.jrebel.com/blog/what-is-a-modular-monolith)
+
 ## Angular best practices
 
 - [Angular Awesome](https://github.com/akhilben/angular-awesome/tree/823bd76a66888b1e7e40f883f54a6a7302371202#-table-of-contents)
-- use `untilDestroyed` https://github.com/ngneat/until-destroy
+- [until-destroy](https://github.com/ngneat/until-destroy)
+- [Migrating an Angular CLI project to ESLint](https://github.com/angular-eslint/angular-eslint#migrating-an-angular-cli-project-from-codelyzer-and-tslint)
