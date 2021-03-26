@@ -26,7 +26,8 @@
   - Information: [DevIQ](https://deviq.com/design-patterns/null-object-pattern)
 - Null Object
 - Repository
-- Specification
+- Specification (FluentValidation)
+- CQRS (MediatR)
 - Singleton
 - State
 - Observer
