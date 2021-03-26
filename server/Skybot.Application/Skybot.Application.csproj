@@ -4,4 +4,13 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Bots\Commands\" />
+    <Folder Include="Bots\Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Skybot.Domain\Skybot.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
