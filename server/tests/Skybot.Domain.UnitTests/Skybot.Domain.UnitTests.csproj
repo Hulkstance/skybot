@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Skybot.Domain\Skybot.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Skybot.Domain\Skybot.Domain.csproj" />
   </ItemGroup>
 
 </Project>
