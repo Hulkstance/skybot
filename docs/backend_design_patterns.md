@@ -10,3 +10,6 @@ Quote from [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnCon
 > 
 > Then, we can use the **Notification pattern** in order to return a collection of validation errors, instead of the simple "exception approach" we are currently implementing which is only returning the first exception you get instead of all the possible errors.
 For example, see these blog post for further details:
+
+## References:
+- Specification pattern implementation: [ASP.NET Boilerplate by Osama94](https://github.com/Osama94/aspnetboilerplate/blob/e88a01b3684f68575099de48d6ee01fe5c7ef9a3/src/Abp/Specifications/Specification.cs)
