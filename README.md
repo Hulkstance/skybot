@@ -51,6 +51,7 @@
   - Microservices
   - Monolith
   - Modular Monolith
+- [Clean Architecture by Steve "Ardalis" Smith](https://github.com/ardalis/CleanArchitecture)
 
 ### References:
 - [Monolith vs Modular Monolith vs Microservices](https://www.jrebel.com/blog/what-is-a-modular-monolith)
