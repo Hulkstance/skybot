@@ -24,6 +24,20 @@
 - Elasticsearch, Serilog & Kibana
 - Docker
 
+## Database migrations
+
+To add migration:
+
+```
+dotnet ef migrations add InitialCreate --project src\Skybot.Infrastracture --startup-project src\Skybot.Web --output-dir Persistence\Migrations
+```
+
+To update database:
+
+```
+dotnet ef database update --project src\Skybot.Infrastructure --startup-project src\Skybot.Web
+```
+
 ## TradingView advantages
 
 - Tick data
