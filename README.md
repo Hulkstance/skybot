@@ -14,14 +14,15 @@
 - Repository pattern
 - Unit of Work
 
-## Tools we used
+## Technologies
 
-- Entity Framework Core
-- FluentValidation
-- AutoMapper
+- ASP.NET Core 5
+- Entity Framework Core 5
 - MediatR
-- XUnit
-- Moq
+- FluentValidation
+- XUnit, FluentAssertions & Moq
+- Elasticsearch, Serilog & Kibana
+- Docker
 
 ## TradingView advantages
 
