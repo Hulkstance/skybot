@@ -7,6 +7,7 @@
 
 - Domain-driven design
 - Clean Code
+- SOLID
 - Dependency Injection
 - CQRS pattern
 - Notification pattern
