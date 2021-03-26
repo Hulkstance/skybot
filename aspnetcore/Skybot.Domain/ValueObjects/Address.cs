@@ -4,12 +4,6 @@ namespace Skybot.Domain.ValueObjects
 {
     public class Address : ValueObject
     {
-        public string Street { get; }
-        public string City { get; }
-        public string State { get; }
-        public string Country { get; }
-        public string ZipCode { get; }
-
         public Address() { }
 
         public Address(string street, string city, string state, string country, string zipcode)
@@ -20,6 +14,12 @@ namespace Skybot.Domain.ValueObjects
             Country = country;
             ZipCode = zipcode;
         }
+
+        public string Street { get; }
+        public string City { get; }
+        public string State { get; }
+        public string Country { get; }
+        public string ZipCode { get; }
 
         protected override IEnumerable<object> GetEqualityComponents()
         {
