@@ -3,6 +3,25 @@
 [![Angular status](https://github.com/Hulkstance/skybot/actions/workflows/angular.yml/badge.svg)](https://github.com/Hulkstance/skybot/actions/)
 [![GitHub license](https://img.shields.io/badge/license-GNU-blue.svg)](https://github.com/Hulkstance/skybot/blob/main/LICENSE)
 
+## Applied concepts
+
+- Domain-driven design
+- Clean Code
+- Dependency Injection
+- CQRS pattern
+- Notification pattern
+- Repository pattern
+- Unit of Work
+
+## Tools we used
+
+- Entity Framework Core
+- FluentValidation
+- AutoMapper
+- MediatR
+- XUnit
+- Moq
+
 ## TradingView advantages
 
 - Tick data
