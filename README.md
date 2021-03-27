@@ -12,6 +12,7 @@
 - CQRS pattern
 - Notification pattern
 - Repository pattern
+- Specification pattern
 - Unit of Work
 
 ## Technologies
@@ -19,6 +20,7 @@
 - ASP.NET Core 5
 - Entity Framework Core 5
 - MediatR
+- AutoMapper
 - FluentValidation
 - XUnit, FluentAssertions & Moq
 - Elasticsearch, Serilog & Kibana
