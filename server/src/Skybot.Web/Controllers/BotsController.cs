@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Skybot.Application.Bots.Commands.Create;
 using Skybot.Application.Bots.Commands.Delete;
@@ -18,13 +14,17 @@ namespace Skybot.Web.Controllers
         [HttpGet]
         public async Task<ActionResult<IList<BotDto>>> GetBots()
         {
-            return Ok(await Mediator.Send(new GetAllBotsQuery()).ConfigureAwait(false));
+            var result = await Mediator.Send(new GetAllBotsQuery()).ConfigureAwait(false);
+
+            return Ok(result);
         }
 
         [HttpPost]
         public async Task<ActionResult<BotDto>> Create(CreateBotCommand command)
         {
-            return Ok(await Mediator.Send(command).ConfigureAwait(false));
+            var result = await Mediator.Send(command).ConfigureAwait(false);
+
+            return Ok(result);
         }
 
         [HttpPut("{id}")]
