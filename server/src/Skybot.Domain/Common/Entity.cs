@@ -1,12 +1,33 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Threading.Tasks;
+using Skybot.Domain.Common.Interfaces;
 
 namespace Skybot.Domain.Common
 {
-    public abstract class Entity
+    public abstract class Entity : IEntity
     {
         public int Id { get; set; }
 
-        public ICollection<DomainEvent> DomainEvents { get; } = new Collection<DomainEvent>();
+        public DateTime CreatedAt { get; protected set; }
+        public DateTime? ModifiedAt { get; protected set; }
+
+        public ICollection<IDomainEvent> DomainEvents { get; } = new Collection<IDomainEvent>();
+
+        public Task InvokeEvents(Func<IDomainEvent, Task> invoke)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddDomainEvent(DomainEvent eventItem)
+        {
+            DomainEvents.Add(eventItem);
+        }
+
+        public void RemoveDomainEvent(DomainEvent eventItem)
+        {
+            DomainEvents.Remove(eventItem);
+        }
     }
 }

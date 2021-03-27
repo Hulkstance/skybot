@@ -1,10 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using Skybot.Domain.Common.Interfaces;
 
 namespace Skybot.Domain.Common
 {
-    public class AggregateRoot
+    public abstract class AggregateRoot : Entity, IAggregateRoot
     {
-        public ICollection<DomainEvent> DomainEvents { get; } = new Collection<DomainEvent>();
     }
 }

@@ -1,10 +1,9 @@
-﻿using System;
+﻿using Skybot.Domain.Common;
 
 namespace Skybot.Domain.Entities
 {
-    public class Bot
+    public class Bot : AggregateRoot
     {
         public string Symbol { get; set; }
-        public TimeSpan TimeFrame { get; set; }
     }
 }

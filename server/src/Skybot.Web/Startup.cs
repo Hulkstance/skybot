@@ -1,3 +1,4 @@
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -6,6 +7,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Identity.Web;
 using Microsoft.OpenApi.Models;
+using Skybot.Application;
+using Skybot.Infrastructure;
 
 namespace Skybot.Web
 {
@@ -20,10 +23,17 @@ namespace Skybot.Web
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services
+                .AddApplication()
+                .AddInfrastructure(Configuration);
+
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddMicrosoftIdentityWebApi(Configuration.GetSection("AzureAd"));
 
-            services.AddControllers();
+            services
+                .AddControllers()
+                .AddFluentValidation();
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Skybot.Web", Version = "v1" });
