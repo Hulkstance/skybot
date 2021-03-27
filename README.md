@@ -3,6 +3,43 @@
 [![Angular status](https://github.com/Hulkstance/skybot/actions/workflows/angular.yml/badge.svg)](https://github.com/Hulkstance/skybot/actions/)
 [![GitHub license](https://img.shields.io/badge/license-GNU-blue.svg)](https://github.com/Hulkstance/skybot/blob/main/LICENSE)
 
+## Applied concepts
+
+- Domain-driven design
+- Clean Code
+- SOLID
+- Dependency Injection
+- CQRS pattern
+- Notification pattern
+- Repository pattern
+- Specification pattern
+- Unit of Work
+
+## Technologies
+
+- ASP.NET Core 5
+- Entity Framework Core 5
+- MediatR
+- AutoMapper
+- FluentValidation
+- XUnit, FluentAssertions & Moq
+- Elasticsearch, Serilog & Kibana
+- Docker
+
+## Database migrations
+
+To add migration:
+
+```
+dotnet ef migrations add InitialCreate --project src\Skybot.Infrastracture --startup-project src\Skybot.Web --output-dir Persistence\Migrations
+```
+
+To update database:
+
+```
+dotnet ef database update --project src\Skybot.Infrastructure --startup-project src\Skybot.Web
+```
+
 ## TradingView advantages
 
 - Tick data
