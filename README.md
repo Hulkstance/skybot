@@ -22,7 +22,7 @@
 - MediatR
 - AutoMapper
 - FluentValidation
-- XUnit, FluentAssertions & Moq
+- XUnit & Moq
 - Elasticsearch, Serilog & Kibana
 - Docker
 
