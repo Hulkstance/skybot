@@ -15,8 +15,4 @@
     <ProjectReference Include="..\Skybot.Application\Skybot.Application.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Persistence\Configurations\" />
-  </ItemGroup>
-
 </Project>
