@@ -30,6 +30,10 @@ namespace Skybot.Web
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddMicrosoftIdentityWebApi(Configuration.GetSection("AzureAd"));
 
+            services.AddHealthChecks()
+                .AddSqlServer(Configuration.GetConnectionString("DefaultConnection"), name: "SQL Server")
+                .AddElasticsearch(Configuration["ElasticConfiguration:Uri"], "Elasticsearch");
+            
             services
                 .AddControllers()
                 .AddFluentValidation();
@@ -48,6 +52,8 @@ namespace Skybot.Web
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Skybot.Web v1"));
             }
+
+            app.UseHealthChecks("/health");
 
             app.UseHttpsRedirection();
             

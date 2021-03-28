@@ -1,6 +1,18 @@
 version: '3.4'
 
 services:
+  db:
+    container_name: skybotdb
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      SA_PASSWORD: "SkybotPassword123456"
+      ACCEPT_EULA: "Y"
+    ports:
+      - 1433:1433
+    restart: unless-stopped
+    networks:
+      - webnet
+
   skybot.web:
     image: ${DOCKER_REGISTRY-}skybotweb
     build:
@@ -9,6 +21,8 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=https://0.0.0.0:5001
+      - "UseInMemoryDatabase=true"
+      - "ConnectionStrings__DefaultConnection=Server=db;Database=SkybotDb;User=sa;Password=SkybotPassword123456;MultipleActiveResultSets=true"
       - ElasticConfiguration__Uri=http://es01:9200
     ports:
       - 5000:5000
@@ -17,6 +31,7 @@ services:
     networks:
       - webnet
     depends_on:
+      - db
       - es01
 
   es01:
