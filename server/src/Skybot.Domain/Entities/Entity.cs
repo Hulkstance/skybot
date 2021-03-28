@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
-using Skybot.Domain.Common.Interfaces;
+using Skybot.Domain.Events;
 
-namespace Skybot.Domain.Common
+namespace Skybot.Domain.Entities
 {
     public abstract class Entity : IEntity
     {

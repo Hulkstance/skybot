@@ -1,6 +1,4 @@
-﻿using Skybot.Domain.Common.Interfaces;
-
-namespace Skybot.Domain.Common
+﻿namespace Skybot.Domain.Entities
 {
     public abstract class AggregateRoot : Entity, IAggregateRoot
     {

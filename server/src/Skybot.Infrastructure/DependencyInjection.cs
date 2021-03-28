@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Skybot.Domain.Repositories;
 using Skybot.Infrastructure.Persistence;
 
 namespace Skybot.Infrastructure
@@ -17,8 +18,11 @@ namespace Skybot.Infrastructure
             else
             {
                 services.AddDbContext<ApplicationDbContext>(options =>
-                    options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Test"));
+                    options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"),
+                        b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
             }
+            
+            services.AddScoped<IRepository, EfRepository>();
 
             return services;
         }

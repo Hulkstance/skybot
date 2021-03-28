@@ -1,4 +1,4 @@
-﻿using Skybot.Application.Common.Mappings;
+﻿using Skybot.Application.Mappings;
 using Skybot.Domain.Entities;
 
 namespace Skybot.Application.Bots.Dtos

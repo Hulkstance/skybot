@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Skybot.Domain.Common.Interfaces
+namespace Skybot.Domain.Entities
 {
     public interface ICreatable
     {

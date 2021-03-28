@@ -1,4 +1,4 @@
-﻿namespace Skybot.Domain.Common.Interfaces
+﻿namespace Skybot.Domain.Entities
 {
     public interface IAggregateRoot : IEntity
     {

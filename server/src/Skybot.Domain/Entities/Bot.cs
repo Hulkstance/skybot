@@ -1,6 +1,4 @@
-﻿using Skybot.Domain.Common;
-
-namespace Skybot.Domain.Entities
+﻿namespace Skybot.Domain.Entities
 {
     public class Bot : AggregateRoot
     {

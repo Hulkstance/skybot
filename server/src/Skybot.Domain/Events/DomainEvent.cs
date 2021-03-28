@@ -1,8 +1,7 @@
 ﻿using System;
 using MediatR;
-using Skybot.Domain.Common.Interfaces;
 
-namespace Skybot.Domain.Common
+namespace Skybot.Domain.Events
 {
     public abstract class DomainEvent : IDomainEvent, INotification
     {

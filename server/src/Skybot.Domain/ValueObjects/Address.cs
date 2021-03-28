@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Skybot.Domain.Common;
 
 namespace Skybot.Domain.ValueObjects
 {

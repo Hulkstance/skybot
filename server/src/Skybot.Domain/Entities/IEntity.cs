@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Skybot.Domain.Events;
 
-namespace Skybot.Domain.Common.Interfaces
+namespace Skybot.Domain.Entities
 {
     public interface IEntity : ICreatable, IModifiable
     {

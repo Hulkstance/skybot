@@ -3,7 +3,7 @@ using System.Linq;
 using System.Reflection;
 using AutoMapper;
 
-namespace Skybot.Application.Common.Mappings
+namespace Skybot.Application.Mappings
 {
     public class MappingProfile : Profile
     {

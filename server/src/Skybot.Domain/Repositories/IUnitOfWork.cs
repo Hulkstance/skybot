@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 
-namespace Skybot.Domain.Common
+namespace Skybot.Domain.Repositories
 {
     public interface IUnitOfWork
     {

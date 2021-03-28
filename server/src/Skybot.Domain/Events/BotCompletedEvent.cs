@@ -1,5 +1,4 @@
-﻿using Skybot.Domain.Common;
-using Skybot.Domain.Entities;
+﻿using Skybot.Domain.Entities;
 
 namespace Skybot.Domain.Events
 {

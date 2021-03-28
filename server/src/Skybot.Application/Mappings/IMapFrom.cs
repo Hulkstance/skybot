@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace Skybot.Application.Common.Mappings
+namespace Skybot.Application.Mappings
 {
     public interface IMapFrom<T>
     {
