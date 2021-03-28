@@ -22,6 +22,7 @@
 - MediatR
 - AutoMapper
 - FluentValidation
+- Ardalis.Specification
 - XUnit & Moq
 - Elasticsearch, Serilog & Kibana
 - Docker
