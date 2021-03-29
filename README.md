@@ -31,14 +31,18 @@
 
 To add migration:
 
+1. Navigate to `server`
+2. Execute
 ```
-dotnet ef migrations add InitialCreate --project src\Skybot.Infrastracture --startup-project src\Skybot.Web --output-dir Persistence\Migrations
+dotnet ef migrations add InitialCreate --verbose --project src\Skybot.Infrastructure\Skybot.Infrastructure.csproj --startup-project src\Skybot.Web\Skybot.Web.csproj --output-dir Persistence\Migrations
 ```
 
 To update database:
 
+1. Navigate to `server`
+2. Execute
 ```
-dotnet ef database update --project src\Skybot.Infrastructure --startup-project src\Skybot.Web
+dotnet ef database update --verbose --project src\Skybot.Infrastructure\Skybot.Infrastructure.csproj --startup-project src\Skybot.Web\Skybot.Web.csproj
 ```
 
 ## TradingView advantages
