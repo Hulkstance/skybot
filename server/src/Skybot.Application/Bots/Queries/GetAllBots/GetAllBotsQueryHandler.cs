@@ -11,13 +11,13 @@ namespace Skybot.Application.Bots.Queries.GetAllBots
 {
     public class GetAllBotsQueryHandler : IRequestHandler<GetAllBotsQuery, IList<BotDto>>
     {
-        private readonly IRepository _repository;
         private readonly IMapper _mapper;
+        private readonly IRepository _repository;
 
-        public GetAllBotsQueryHandler(IRepository repository, IMapper mapper)
+        public GetAllBotsQueryHandler(IMapper mapper, IRepository repository)
         {
-            _repository = repository;
             _mapper = mapper;
+            _repository = repository;
         }
 
         public async Task<IList<BotDto>> Handle(GetAllBotsQuery request, CancellationToken cancellationToken)

@@ -12,7 +12,7 @@ namespace Skybot.Domain.Repositories
         Task<T> GetByIdAsync<T>(int id) where T : Entity, IAggregateRoot;
         Task<List<T>> ListAsync<T>() where T : Entity, IAggregateRoot;
         Task<List<T>> ListAsync<T>(ISpecification<T> specification) where T : Entity, IAggregateRoot;
-        Task<T> AddAsync<T>(T entity) where T : Entity, IAggregateRoot;
+        Task<T> CreateAsync<T>(T entity) where T : Entity, IAggregateRoot;
         Task UpdateAsync<T>(T entity) where T : Entity, IAggregateRoot;
         Task DeleteAsync<T>(T entity) where T : Entity, IAggregateRoot;
     }

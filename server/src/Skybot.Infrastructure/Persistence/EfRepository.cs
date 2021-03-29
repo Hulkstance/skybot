@@ -36,7 +36,7 @@ namespace Skybot.Infrastructure.Persistence
             return specificationResult.ToListAsync();
         }
 
-        public async Task<T> AddAsync<T>(T entity) where T : Entity, IAggregateRoot
+        public async Task<T> CreateAsync<T>(T entity) where T : Entity, IAggregateRoot
         {
             await _dbContext.Set<T>().AddAsync(entity).ConfigureAwait(false);
             return entity;
