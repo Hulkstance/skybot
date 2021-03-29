@@ -31,7 +31,7 @@
 
 To add migration:
 
-1. Navigate to `server`
+1. Navigate to `./server`
 2. Execute
 ```
 dotnet ef migrations add InitialCreate --verbose --project src\Skybot.Infrastructure\Skybot.Infrastructure.csproj --startup-project src\Skybot.Web\Skybot.Web.csproj --output-dir Persistence\Migrations
@@ -39,7 +39,7 @@ dotnet ef migrations add InitialCreate --verbose --project src\Skybot.Infrastruc
 
 To update database:
 
-1. Navigate to `server`
+1. Navigate to `./server`
 2. Execute
 ```
 dotnet ef database update --verbose --project src\Skybot.Infrastructure\Skybot.Infrastructure.csproj --startup-project src\Skybot.Web\Skybot.Web.csproj
