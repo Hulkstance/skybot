@@ -6,6 +6,7 @@ using MediatR;
 using Skybot.Application.Bots.Dtos;
 using Skybot.Domain.Entities;
 using Skybot.Domain.Repositories;
+using Skybot.Domain.Specifications;
 
 namespace Skybot.Application.Bots.Queries.GetAllBots
 {
@@ -22,7 +23,9 @@ namespace Skybot.Application.Bots.Queries.GetAllBots
 
         public async Task<IList<BotDto>> Handle(GetAllBotsQuery request, CancellationToken cancellationToken)
         {
-            var bots = await _repository.ListAsync<Bot>().ConfigureAwait(false);
+            var orderedSpec = new OrderedBotsSpecification();
+
+            var bots = await _repository.ListAsync(orderedSpec).ConfigureAwait(false);
             
             return _mapper.Map<List<Bot>, List<BotDto>>(bots);
         }
