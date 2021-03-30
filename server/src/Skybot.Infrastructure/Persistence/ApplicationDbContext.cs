@@ -13,7 +13,7 @@ namespace Skybot.Infrastructure.Persistence
     {
         private readonly IMediator _mediator;
 
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IMediator mediator) 
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IMediator mediator)
             : base(options)
         {
             _mediator = mediator;
@@ -27,7 +27,7 @@ namespace Skybot.Infrastructure.Persistence
 
             base.OnModelCreating(modelBuilder);
         }
-        
+
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new())
         {
             var entitiesWithEvents = ChangeTracker.Entries<Entity>()
@@ -38,15 +38,16 @@ namespace Skybot.Infrastructure.Persistence
             foreach (var entity in entitiesWithEvents)
             {
                 var events = entity.DomainEvents;
-                
-                foreach (var domainEvent in events) await _mediator.Publish(domainEvent, cancellationToken).ConfigureAwait(false);
+
+                foreach (var domainEvent in events)
+                    await _mediator.Publish(domainEvent, cancellationToken).ConfigureAwait(false);
 
                 entity.DomainEvents.Clear();
             }
 
             return await base.SaveChangesAsync(cancellationToken).ConfigureAwait(false);
         }
-
+        
         public override int SaveChanges()
         {
             return SaveChangesAsync().GetAwaiter().GetResult();
