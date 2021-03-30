@@ -4,6 +4,7 @@ using AutoMapper;
 using MediatR;
 using Skybot.Application.Bots.Dtos;
 using Skybot.Domain.Entities;
+using Skybot.Domain.Events;
 using Skybot.Domain.Repositories;
 
 namespace Skybot.Application.Bots.Commands.Create
@@ -25,6 +26,8 @@ namespace Skybot.Application.Bots.Commands.Create
             {
                 Symbol = request.Symbol
             };
+
+            entity.DomainEvents.Add(new BotCompletedEvent(entity));
 
             var bot = await _repository.CreateAsync(entity).ConfigureAwait(false);
             await _repository.UnitOfWork.SaveChangesAsync(cancellationToken).ConfigureAwait(false);

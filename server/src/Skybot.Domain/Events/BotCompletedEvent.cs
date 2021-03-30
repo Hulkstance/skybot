@@ -9,6 +9,6 @@ namespace Skybot.Domain.Events
             CompletedItem = completedItem;
         }
         
-        public Bot CompletedItem { get; set; }
+        public Bot CompletedItem { get; }
     }
 }
