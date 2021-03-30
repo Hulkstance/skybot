@@ -101,8 +101,6 @@ dotnet ef database update --verbose --project src\Skybot.Infrastructure\Skybot.I
 ### References
 - [Clean Domain-Driven Design in 10 minutes - Hackernoon](https://hackernoon.com/clean-domain-driven-design-in-10-minutes-6037a59c8b7b)
 - [Why You Should Avoid Command Handlers Calling Other Commands?](https://www.rahulpnath.com/blog/avoid-commands-calling-commands/)
-
-### References:
 - [Monolith vs Modular Monolith vs Microservices](https://www.jrebel.com/blog/what-is-a-modular-monolith)
 
 ## Angular best practices
