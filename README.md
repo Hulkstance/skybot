@@ -97,6 +97,7 @@ dotnet ef database update --verbose --project src\Skybot.Infrastructure\Skybot.I
   - Modular Monolith
 - [Clean Architecture by Steve "Ardalis" Smith](https://github.com/ardalis/CleanArchitecture)
 - [Clean Architecture by iayti](https://github.com/iayti/CleanArchitecture)
+- [eShopOnContainers by Microsoft](https://github.com/dotnet-architecture/eShopOnContainers/tree/main/src/BuildingBlocks)
 
 ### References
 - [Clean Domain-Driven Design in 10 minutes - Hackernoon](https://hackernoon.com/clean-domain-driven-design-in-10-minutes-6037a59c8b7b)
