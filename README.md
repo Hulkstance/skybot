@@ -103,7 +103,7 @@ dotnet ef database update --verbose --project src\Skybot.Infrastructure\Skybot.I
 - [Why You Should Avoid Command Handlers Calling Other Commands?](https://www.rahulpnath.com/blog/avoid-commands-calling-commands/)
 - [Monolith vs Modular Monolith vs Microservices](https://www.jrebel.com/blog/what-is-a-modular-monolith)
 
-## Angular best practices
+## Angular Best Practices
 
 - [Angular Awesome](https://github.com/akhilben/angular-awesome/tree/823bd76a66888b1e7e40f883f54a6a7302371202#-table-of-contents)
 - [until-destroy](https://github.com/ngneat/until-destroy)
