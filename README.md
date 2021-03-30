@@ -23,6 +23,7 @@
 - AutoMapper
 - FluentValidation
 - Ardalis.Specification
+- Ardalis.GuardClauses
 - XUnit & Moq
 - Elasticsearch, Serilog & Kibana
 - Docker
