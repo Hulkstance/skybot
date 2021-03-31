@@ -90,6 +90,7 @@ dotnet ef database update --verbose --project src\Skybot.Infrastructure\Skybot.I
 
 ## Clean Architectures
 
+- [Clean Architecture by Robert C. Martin](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 - [Clean Architecture by Jason Taylor](https://github.com/jasontaylordev/CleanArchitecture/tree/d0f133ee026aec5cd5856c5592c307b5f20fa8e4)
 - [Clean Architecture by Phong Nguyen](https://github.com/phongnguyend/Practical.CleanArchitecture/tree/66699d05e66b7f7e06704f528c7677bd5db1f5fa)
   - Microservices
