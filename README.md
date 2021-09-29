@@ -7,13 +7,14 @@
 
 - Domain-driven design
 - Clean Code
-- SOLID
+- SOLID principles
 - Dependency Injection
 - CQRS pattern
 - Notification pattern
 - Repository pattern
 - Specification pattern
 - Unit of Work
+- Guard Clause
 
 ## Technologies
 
