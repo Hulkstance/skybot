@@ -62,20 +62,12 @@ dotnet ef database update --verbose --project src\Skybot.Infrastructure\Skybot.I
 
 ## Design patterns
 
-- Adapter
 - Builder
-- Guard Clause
-  - NuGet package: [Ardalis.GuardClauses](https://github.com/ardalis/GuardClauses)
-  - Information: [DevIQ](https://deviq.com/design-patterns/null-object-pattern)
-- Null Object
+- [Guard Clause](https://deviq.com/design-patterns/null-object-pattern)
 - Repository
 - Specification (FluentValidation)
 - CQRS (MediatR)
 - Singleton
-- State
-- Observer
-- Publisher-Subscriber
-- Object Pool
 - Strategy
 
 ### References:
