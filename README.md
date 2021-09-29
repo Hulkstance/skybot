@@ -14,7 +14,6 @@
 - Repository pattern
 - Specification pattern
 - Unit of Work
-- Guard Clause
 
 ## Technologies
 
