@@ -97,6 +97,8 @@ dotnet ef database update --verbose --project src\Skybot.Infrastructure\Skybot.I
 - [Why You Should Avoid Command Handlers Calling Other Commands?](https://www.rahulpnath.com/blog/avoid-commands-calling-commands/)
 - [How to Organize CLEAN ARCHITECTURE to Modular Patterns in 10 Minutes](https://hackernoon.com/applying-clean-architecture-on-web-application-with-modular-pattern-7b11f1b89011)
 - [Monolith vs Modular Monolith vs Microservices](https://www.jrebel.com/blog/what-is-a-modular-monolith)
+- [Design Patterns](https://deviq.com/design-patterns/design-patterns-overview)
+- [SOLID Principles](https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design)
 
 ## Angular Best Practices
 
