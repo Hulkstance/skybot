@@ -76,9 +76,9 @@ dotnet ef database update --verbose --project src\Skybot.Infrastructure\Skybot.I
 
 ## Architecture
 - Domain-driven design
-- Behavior-driven development
 - Test-driven development
-- Pain-driven development
+- Acceptance Test-driven development
+- Behavior-driven development
 
 ## Clean Architectures
 
