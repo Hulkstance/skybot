@@ -46,13 +46,6 @@ To update database:
 dotnet ef database update --verbose --project src\Skybot.Infrastructure\Skybot.Infrastructure.csproj --startup-project src\Skybot.Web\Skybot.Web.csproj
 ```
 
-## TradingView advantages
-
-- Tick data
-- Visualization and the graphics are loading incredibly fast
-- Custom time intervals e.g. 45-minute interval
-- FOREX, crypto, indices, etc. in one platform
-
 ## Principles
 
 - SOLID
