@@ -67,12 +67,6 @@ dotnet ef database update --verbose --project src\Skybot.Infrastructure\Skybot.I
 - [Design patterns given by Jason Taylor](https://deviq.com/design-patterns/repository-pattern)
 - [Refactoring.Guru](https://refactoring.guru/design-patterns)
 
-## Architecture
-- Domain-driven design
-- Test-driven development
-- Acceptance Test-driven development
-- Behavior-driven development
-
 ## Clean Architectures
 
 - [Clean Architecture by Robert C. Martin](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
