@@ -58,10 +58,13 @@ dotnet ef database update --verbose --project src\Skybot.Infrastructure\Skybot.I
 - Builder
 - [Guard Clause](https://deviq.com/design-patterns/null-object-pattern)
 - Repository
-- Specification (FluentValidation)
+- Specification
 - CQRS (MediatR)
 - Singleton
 - Strategy
+- Command
+- Mediator
+- Observer
 
 ### References:
 - [Design patterns given by Jason Taylor](https://deviq.com/design-patterns/repository-pattern)
